@@ -2,7 +2,7 @@
 
 **Python Version**
 
-We recommend using python 3.7.
+Python 3.7 is the version we recommend.
 
 **What is an SDK?**
 

@@ -6,7 +6,7 @@ We recommend using python 3.7.
 
 **What is an SDK?**
 
-[SDK](https://clevertap.com/glossary/sdk/) stands for software development kit or devkit for short. It&#39;s a set of software tools and programs used by developers to create [applications](https://clevertap.com/glossary/app/) for specific platforms. SDK tools will include a range of things, including libraries, documentation, code samples, processes, and guides that developers can use and integrate into their own apps. SDKs are designed to be used for specific platforms or programming languages.
+[SDK](https://clevertap.com/glossary/sdk/) stands for software development kit or devkit for short. It"s a set of software tools and programs used by developers to create [applications](https://clevertap.com/glossary/app/) for specific platforms. SDK tools will include a range of things, including libraries, documentation, code samples, processes, and guides that developers can use and integrate into their own apps. SDKs are designed to be used for specific platforms or programming languages.
 
 **Virtual Environment**
 
@@ -14,7 +14,7 @@ Use a virtual environment to manage the dependencies for your project, both in d
 
 What problem does a virtual environment solve? The more Python projects you have, the more likely it is that you need to work with different versions of Python libraries, or even Python itself. Newer versions of libraries for one project can break compatibility in another project.
 
-Virtual environments are independent groups of Python libraries, one for each project. Packages installed for one project will not affect other projects or the operating system&#39;s packages.
+Virtual environments are independent groups of Python libraries, one for each project. Packages installed for one project will not affect other projects or the operating system"s packages.
 
 Python comes bundled with the [venv](https://docs.python.org/3/library/venv.html#module-venv) module to create virtual environments.
 
@@ -24,27 +24,29 @@ Create a project folder and a venv folder within:
 
 **macOS/LINUX**
 
+```bash
 $ mkdir myproject
 
 $ cd myproject
 
 $ python3 -m venv venv
-
+```
 **Windows**
 
-\&gt; mkdir myproject
+```
+ mkdir myproject
 
-\&gt; cd myproject
+ cd myproject
 
-\&gt; py -3 -m venv venv
-
+ py -3 -m venv venv
+```
 **Activate the environment**
 
 Before you work on your project, activate the corresponding environment:
 
 **macOS/LINUX**
 
-$ . venv/bin/activate
+`$ . venv/bin/activate`
 
 **Windows**
 
@@ -65,124 +67,92 @@ This Page will give you a good introduction to Lens. Before getting started with
 Below are the code snippets to make a POST request and get the response back.
 
 **\*Python\***
-
+```python
 import requests, json
 
-url = &quot;http://lensservice.polynomial.ai/kit/analyze&quot;
+url = "http://lensservice.polynomial.ai/kit/analyze"
 
-payload={
-
-&quot;data&quot;: [
-
-{
-
-&quot;user\_id&quot;: 1543,
-
-&quot;full\_name&quot;: &quot;Aparna Pothanis&quot;,
-
-&quot;email&quot;: &quot;aparnna\_pothanis@polynomial.ai&quot;,
-
-&quot;name&quot;: &quot;Polynomial&quot;,
-
-&quot;utterance&quot;: &quot;Hi everyone&quot;,
-
-&quot;identifier&quot;: 2,
-
-&quot;start\_time&quot;: &quot;2021-10-19 18:00:55.760&quot;,
-
-&quot;end\_time&quot;: &quot;2021-10-19 18:00:56.780&quot;,
-
-},
-
-{
-
-&quot;user\_id&quot;: 1543,
-
-&quot;full\_name&quot;: &quot;Revant Amingad&quot;,
-
-&quot;email&quot;: &quot;ramingad@gainsight.com&quot;,
-
-&quot;name&quot;: &quot;Gainsight&quot;,
-
-&quot;utterance&quot;: &quot; Good afternoon.&quot;,
-
-&quot;identifier&quot;: 3,
-
-&quot;start\_time&quot;: &quot;2021-10-19 18:00:57.859&quot;,
-
-&quot;end\_time&quot;: &quot;2021-10-19 18:01:01.250&quot;,
-
-},
-
-{\&lt;-\&gt;},
-
-{\&lt;-\&gt;}
-
-]
-
+payload = {
+    "data": [
+        {
+            "user_id": 1543,
+            "full_name": "Aparna Pothanis",
+            "email": "aparnna_pothanis@polynomial.ai",
+            "name": "Polynomial",
+            "utterance": "Hi everyone",
+            "identifier": 2,
+            "start_time": "2021-10-19 18:00:55.760",
+            "end_time": "2021-10-19 18:00:56.780",
+        },
+        {
+            "user_id": 1543,
+            "full_name": "Revant Amingad",
+            "email": "ramingad@gainsight.com",
+            "name": "Gainsight",
+            "utterance": " Good afternoon.",
+            "identifier": 3,
+            "start_time": "2021-10-19 18:00:57.859",
+            "end_time": "2021-10-19 18:01:01.250",
+        },
+    ]
 }
 
-headers = {
-
-&#39;accesskey&#39;: &#39;{{key}}&#39;
-
-&#39;agentID&#39; : &#39;61b5efa89ef90206c8541bba&#39;
-
-}​
+headers = {"accesskey": "your_agent_key", "agentID": "your_agent_id"}
 
 response = requests.post(url, headers=headers, data=json.dumps(payload))
 
-print(response.text , response.status\_code)
+print(response.text, response.status_code)
 
+```
 **\*\*cURL\*\***
 
-curl --location --request POST &#39;lensservice.polynomial.ai/kit/analyze&#39; \
+curl --location --request POST "lensservice.polynomial.ai/kit/analyze" \
 
---header &#39;accesskey: {{key}}&#39; \
+--header "accesskey: {{key}}" \
 
---header &#39;agentID: 61b5efa89ef90206c8541bba&#39; \
+--header "agentID: 61b5efa89ef90206c8541bba" \
 
---data-raw &#39;{
+--data-raw "{
 
-&quot;data&quot;: [
+"data": [
 
 {
 
-&quot;user\_id&quot;: 1543,
+"user\_id": 1543,
 
-&quot;full\_name&quot;: &quot;Aparna Pothanis&quot;,
+"full\_name": "Aparna Pothanis",
 
-&quot;email&quot;: &quot;aparnna\_pothanis@polynomial.ai&quot;,
+"email": "aparnna\_pothanis@polynomial.ai",
 
-&quot;name&quot;: &quot;Polynomial&quot;,
+"name": "Polynomial",
 
-&quot;utterance&quot;: &quot;Hi everyone&quot;,
+"utterance": "Hi everyone",
 
-&quot;identifier&quot;: 2,
+"identifier": 2,
 
-&quot;start\_time&quot;: &quot;2021-10-19 18:00:55.760&quot;,
+"start\_time": "2021-10-19 18:00:55.760",
 
-&quot;end\_time&quot;: &quot;2021-10-19 18:00:56.780&quot;,
+"end\_time": "2021-10-19 18:00:56.780",
 
 },
 
 {
 
-&quot;user\_id&quot;: 1543,
+"user\_id": 1543,
 
-&quot;full\_name&quot;: &quot;Revant Amingad&quot;,
+"full\_name": "Revant Amingad",
 
-&quot;email&quot;: &quot;ramingad@gainsight.com&quot;,
+"email": "ramingad@gainsight.com",
 
-&quot;name&quot;: &quot;Gainsight&quot;,
+"name": "Gainsight",
 
-&quot;utterance&quot;: &quot; Good afternoon.&quot;,
+"utterance": " Good afternoon.",
 
-&quot;identifier&quot;: 3,
+"identifier": 3,
 
-&quot;start\_time&quot;: &quot;2021-10-19 18:00:57.859&quot;,
+"start\_time": "2021-10-19 18:00:57.859",
 
-&quot;end\_time&quot;: &quot;2021-10-19 18:01:01.250&quot;,
+"end\_time": "2021-10-19 18:01:01.250",
 
 },
 
@@ -192,31 +162,31 @@ curl --location --request POST &#39;lensservice.polynomial.ai/kit/analyze&#39; \
 
 ]
 
-}&#39;
+}"
 
 **\*\*NodeJs - Native\*\***
 
-var https = require(&#39;follow-redirects&#39;).https;
+var https = require("follow-redirects").https;
 
-var fs = require(&#39;fs&#39;);
+var fs = require("fs");
 
 var options = {
 
-&#39;method&#39;: &#39;POST&#39;,
+"method": "POST",
 
-&#39;hostname&#39;: &#39;lensservice.polynomial.ai&#39;,
+"hostname": "lensservice.polynomial.ai",
 
-&#39;path&#39;: &#39;/kit/analyze&#39;,
+"path": "/kit/analyze",
 
-&#39;headers&#39;: {
+"headers": {
 
-&#39;accesskey&#39;: &#39;{{key}}&#39;,
+"accesskey": "{{key}}",
 
-&#39;agentID&#39;: &#39;61b5efa89ef90206c8541bba&#39;
+"agentID": "61b5efa89ef90206c8541bba"
 
 },
 
-&#39;maxRedirects&#39;: 20
+"maxRedirects": 20
 
 };
 
@@ -224,13 +194,13 @@ var req = https.request(options, function (res) {
 
 var chunks = [];
 
-res.on(&quot;data&quot;, function (chunk) {
+res.on("data", function (chunk) {
 
 chunks.push(chunk);
 
 });
 
-res.on(&quot;end&quot;, function (chunk) {
+res.on("end", function (chunk) {
 
 var body = Buffer.concat(chunks);
 
@@ -238,7 +208,7 @@ console.log(body.toString());
 
 });
 
-res.on(&quot;error&quot;, function (error) {
+res.on("error", function (error) {
 
 console.error(error);
 
@@ -246,47 +216,47 @@ console.error(error);
 
 });
 
-var postData = &#39;{
+var postData = "{
 
-&quot;data&quot;: [
+"data": [
 
 {
 
-&quot;user\_id&quot;: 1543,
+"user\_id": 1543,
 
-&quot;full\_name&quot;: &quot;Aparna Pothanis&quot;,
+"full\_name": "Aparna Pothanis",
 
-&quot;email&quot;: &quot;aparnna\_pothanis@polynomial.ai&quot;,
+"email": "aparnna\_pothanis@polynomial.ai",
 
-&quot;name&quot;: &quot;Polynomial&quot;,
+"name": "Polynomial",
 
-&quot;utterance&quot;: &quot;Hi everyone&quot;,
+"utterance": "Hi everyone",
 
-&quot;identifier&quot;: 2,
+"identifier": 2,
 
-&quot;start\_time&quot;: &quot;2021-10-19 18:00:55.760&quot;,
+"start\_time": "2021-10-19 18:00:55.760",
 
-&quot;end\_time&quot;: &quot;2021-10-19 18:00:56.780&quot;,
+"end\_time": "2021-10-19 18:00:56.780",
 
 },
 
 {
 
-&quot;user\_id&quot;: 1543,
+"user\_id": 1543,
 
-&quot;full\_name&quot;: &quot;Revant Amingad&quot;,
+"full\_name": "Revant Amingad",
 
-&quot;email&quot;: &quot;ramingad@gainsight.com&quot;,
+"email": "ramingad@gainsight.com",
 
-&quot;name&quot;: &quot;Gainsight&quot;,
+"name": "Gainsight",
 
-&quot;utterance&quot;: &quot; Good afternoon.&quot;,
+"utterance": " Good afternoon.",
 
-&quot;identifier&quot;: 3,
+"identifier": 3,
 
-&quot;start\_time&quot;: &quot;2021-10-19 18:00:57.859&quot;,
+"start\_time": "2021-10-19 18:00:57.859",
 
-&quot;end\_time&quot;: &quot;2021-10-19 18:01:01.250&quot;,
+"end\_time": "2021-10-19 18:01:01.250",
 
 },
 
@@ -296,7 +266,7 @@ var postData = &#39;{
 
 ]
 
-}&#39;
+}"
 
 req.write(postData);
 
@@ -304,63 +274,63 @@ req.end();
 
 **\*\*NodeJs - Request\*\***
 
-var request = require(&#39;request&#39;);
+var request = require("request");
 
 var options = {
 
-&#39;method&#39;: &#39;POST&#39;,
+"method": "POST",
 
-&#39;url&#39;: &#39;lensservice.polynomial.ai/kit/kit/analyze&#39;,
+"url": "lensservice.polynomial.ai/kit/kit/analyze",
 
-&#39;headers&#39;: {
+"headers": {
 
-&#39;accesskey&#39;: &#39;{{key}}&#39;,
+"accesskey": "{{key}}",
 
-&#39;agentID&#39;: &#39;61b5efa89ef90206c8541bba&#39;
-
-},
-
-body: &#39;{
-
-&quot;data&quot;: [
-
-{
-
-&quot;user\_id&quot;: 1543,
-
-&quot;full\_name&quot;: &quot;Aparna Pothanis&quot;,
-
-&quot;email&quot;: &quot;aparnna\_pothanis@polynomial.ai&quot;,
-
-&quot;name&quot;: &quot;Polynomial&quot;,
-
-&quot;utterance&quot;: &quot;Hi everyone&quot;,
-
-&quot;identifier&quot;: 2,
-
-&quot;start\_time&quot;: &quot;2021-10-19 18:00:55.760&quot;,
-
-&quot;end\_time&quot;: &quot;2021-10-19 18:00:56.780&quot;,
+"agentID": "61b5efa89ef90206c8541bba"
 
 },
 
+body: "{
+
+"data": [
+
 {
 
-&quot;user\_id&quot;: 1543,
+"user\_id": 1543,
 
-&quot;full\_name&quot;: &quot;Revant Amingad&quot;,
+"full\_name": "Aparna Pothanis",
 
-&quot;email&quot;: &quot;ramingad@gainsight.com&quot;,
+"email": "aparnna\_pothanis@polynomial.ai",
 
-&quot;name&quot;: &quot;Gainsight&quot;,
+"name": "Polynomial",
 
-&quot;utterance&quot;: &quot; Good afternoon.&quot;,
+"utterance": "Hi everyone",
 
-&quot;identifier&quot;: 3,
+"identifier": 2,
 
-&quot;start\_time&quot;: &quot;2021-10-19 18:00:57.859&quot;,
+"start\_time": "2021-10-19 18:00:55.760",
 
-&quot;end\_time&quot;: &quot;2021-10-19 18:01:01.250&quot;,
+"end\_time": "2021-10-19 18:00:56.780",
+
+},
+
+{
+
+"user\_id": 1543,
+
+"full\_name": "Revant Amingad",
+
+"email": "ramingad@gainsight.com",
+
+"name": "Gainsight",
+
+"utterance": " Good afternoon.",
+
+"identifier": 3,
+
+"start\_time": "2021-10-19 18:00:57.859",
+
+"end\_time": "2021-10-19 18:01:01.250",
 
 },
 
@@ -370,7 +340,7 @@ body: &#39;{
 
 ]
 
-}&#39;
+}"
 
 };
 
@@ -386,45 +356,45 @@ console.log(response.body);
 
 {
 
-&quot;data&quot;: [
+"data": [
 
 {
 
-&quot;user\_id&quot;: 1543,
+"user\_id": 1543,
 
-&quot;full\_name&quot;: &quot;Aparna Pothanis&quot;,
+"full\_name": "Aparna Pothanis",
 
-&quot;email&quot;: &quot;aparnna\_pothanis@polynomial.ai&quot;,
+"email": "aparnna\_pothanis@polynomial.ai",
 
-&quot;name&quot;: &quot;Polynomial&quot;,
+"name": "Polynomial",
 
-&quot;utterance&quot;: &quot;Hi everyone&quot;,
+"utterance": "Hi everyone",
 
-&quot;identifier&quot;: 2,
+"identifier": 2,
 
-&quot;start\_time&quot;: &quot;2021-10-19 18:00:55.760&quot;,
+"start\_time": "2021-10-19 18:00:55.760",
 
-&quot;end\_time&quot;: &quot;2021-10-19 18:00:56.780&quot;,
+"end\_time": "2021-10-19 18:00:56.780",
 
 },
 
 {
 
-&quot;user\_id&quot;: 1543,
+"user\_id": 1543,
 
-&quot;full\_name&quot;: &quot;Revant Amingad&quot;,
+"full\_name": "Revant Amingad",
 
-&quot;email&quot;: &quot;ramingad@gainsight.com&quot;,
+"email": "ramingad@gainsight.com",
 
-&quot;name&quot;: &quot;Gainsight&quot;,
+"name": "Gainsight",
 
-&quot;utterance&quot;: &quot; Good afternoon.&quot;,
+"utterance": " Good afternoon.",
 
-&quot;identifier&quot;: 3,
+"identifier": 3,
 
-&quot;start\_time&quot;: &quot;2021-10-19 18:00:57.859&quot;,
+"start\_time": "2021-10-19 18:00:57.859",
 
-&quot;end\_time&quot;: &quot;2021-10-19 18:01:01.250&quot;,
+"end\_time": "2021-10-19 18:01:01.250",
 
 },
 
@@ -458,55 +428,55 @@ console.log(response.body);
 
 {
 
-&quot;prediction&quot;: {
+"prediction": {
 
-&quot;genderDistribution&quot;: {
+"genderDistribution": {
 
-&quot;F&quot;: 111,
+"F": 111,
 
-&quot;M&quot;: 690
-
-},
-
-&quot;genderLinguisticInsight&quot;: {
-
-&quot;M&quot;: {
-
-&quot;Accept&quot;: 97,
-
-&quot;Continuer&quot;: 47,
-
-&quot;Emphasis&quot;: 3,
-
-&quot;Greet&quot;: 9,
-
-&quot;Reject&quot;: 1,
-
-&quot;Statement&quot;: 479,
-
-&quot;System&quot;: 6,
-
-&quot;nAnswer&quot;: 3,
-
-&quot;whQuestion&quot;: 15,
-
-&quot;yAnswer&quot;: 18,
-
-&quot;ynQuestion&quot;: 12
+"M": 690
 
 },
 
-&quot;F&quot;: {
+"genderLinguisticInsight": {
 
-&quot;Accept&quot;: 7,
+"M": {
 
-&quot;Continuer&quot;: 8,
+"Accept": 97,
 
-&quot;Greet&quot;: 1,
+"Continuer": 47,
 
-&quot;Statement&quot;: 90,
+"Emphasis": 3,
 
-&quot;yAnswer&quot;: 5
+"Greet": 9,
+
+"Reject": 1,
+
+"Statement": 479,
+
+"System": 6,
+
+"nAnswer": 3,
+
+"whQuestion": 15,
+
+"yAnswer": 18,
+
+"ynQuestion": 12
+
+},
+
+"F": {
+
+"Accept": 7,
+
+"Continuer": 8,
+
+"Greet": 1,
+
+"Statement": 90,
+
+"yAnswer": 5
 
 }
 

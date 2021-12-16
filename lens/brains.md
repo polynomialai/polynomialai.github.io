@@ -1,4 +1,4 @@
-# Lens Brains
+# **Lens Brains**
 
 Lens has a number of state-of-the-art trained machine learning Brains that can extract detailed insights from any textual source.
 

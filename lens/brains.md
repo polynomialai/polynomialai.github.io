@@ -1,15 +1,15 @@
 # **Lens Brains**
 
-Lens has a number of state-of-the-art trained machine learning Brains that can extract detailed insights from any textual source.
+Lens features state-of-the-art trained machine learning Brains that can extract detailed insights from any textual source.
 
 ## **Some of the Brains are :**
 
 ### **Sentiment Brain**
-Sentiment Detection is the method to measure attitude and emotion of a speaker/writer based on computational treatment of the text. Sentiment Detection Brain could be very useful for businesses to understand the social sentiment of their brand, product or service. Ideal for detecting sentiment for different text pieces.
+Sentiment Detection is a method for determining a speaker's or writer's mood and emotion based on a computational analysis of the text. Businesses may find Sentiment Detection Brain to be highly valuable in determining the social sentiment of their brand, product, or service. Perfect for identifying sentiment in various text parts.
 
 ![Sentiment Brain](img/sentiment.png)
 
-Developed using the state-of-the-art transformer model. Fine-tuned with over 43k data points with an accuracy of 84%. Trained for over 11 hours on a GPU based machine. 
+A state-of-the-art transformer model was used to create this. With over 43k data points and an accuracy of 84 percent, it's been fine-tuned. On a GPU-based system, trained for nearly 11 hours.
 
 The number of classes supported:
 - Positive
@@ -21,11 +21,11 @@ The number of classes supported:
 ### **Emotion Brain**
 
 Emotion detection is the technique of finding and interpreting the emotions conveyed in textual material.
-In some circumstances, the sentiment brain may fail to capture the true feelings. The technique of discovering and interpreting the underlying emotions portrayed in textual data can be achieved by the emotion brain. Suitable for a series of text or long paragraphs
+In some circumstances, the sentiment brain may be unable to accurately capture the true feelings. The emotion brain is a tool for detecting and comprehending the underlying emotions expressed in textual data. Suitable for a long paragraph or a series of text.
 
 ![Emotion Brain](img/emotion.png)
 
-Created using state-of-the-art transformer-based models. Fine-tuned with more than 80k data points. The current model can accept a paragraph or small text and can output the appropriate classes. 
+Models based on state-of-the-art transformers were used to create this piece. With over 80k data points, it's been fine-tuned. The current model can take a paragraph or a few lines of text and generate the necessary classifications.
 
 The current classes supported are:
 - Anger
@@ -39,11 +39,11 @@ The current classes supported are:
 
 ### **Tone Brain**
 
-Tone detection is the method to analyse and detect the emotional and language tones in the text. Tone Detection Brain could be very useful for businesses to learn the tone of the customers communications, their brand, product or service. Tone Detection Brain supports all forms of texts. Long, medium and short texts.
+Tone detection is a technique for analysing and detecting emotional and linguistic tones in text. Businesses could benefit from Tone Detection Brain to learn the tone of their customers' messages, as well as their brand, product, or service. All types of texts are supported by Tone Detection Brain.
 
 ![tone](img/tone.png)
 
-One-of-a-kind transformer-based model, fine-tuned with over 2.75l data points and trained for over 20 hours on GPU. The data is auto collected from different sources and the model is continuously trained and tested. The current accuracy of the model is 89%.  
+A one-of-a-kind transformer-based model that was fine-tuned with over 2.75 million data points and trained on GPU for more than 20 hours. The data is acquired automatically from various sources, and the model is continuously trained and tested. The model's current accuracy is 89 percent.  
 
 The classes supported are:
 - Analytical
@@ -55,19 +55,19 @@ The classes supported are:
 
 ### **Aspect Brain**
 
-Topic extraction is the process of identifying the words or phrases that express the main concepts of text to the best of one’s ability. Aspect Brain works best on medium to large paragraphs. 
+Topic extraction is the process of identifying the words or phrases that, to the best of one's ability, express the major concepts of a text. Aspect Brain works best with paragraphs that are medium to large in size.
 
 ![aspect brain](img/aspect.png)
 
-A cluster-based probabilistic topic extraction.
+Clustering and component analysis, an unsupervised learning method, are used to extract some of the significant words or phrases.
 
 ### **Linguistic**
 
-A Neural Network based model trained to analyse and understand the language and the grammar rules to detect the type of sentences. Ideal for identifying questions and greetings.
+To determine the type of sentences, a neural network-based model was trained to analyse and interpret the language and grammatical rules. Identifying questions and greetings has never been easier.
 
 ![linguistic](img/linguistic.png)
 
-Specifically designed for understanding language and grammar rules. The model is trained on the basis of language structure with over 10k data points and currently has over 96% of training accuracy, and scored around 92.2 % internal testing. 
+Specifically created to aid in the comprehension of language and grammar standards. The model is trained on the basis of linguistic structure with over 10k data points, and it presently has a training accuracy of over 96 percent and an internal testing accuracy of roughly 92.2 percent.
 
 The current model classes supported are:
 - Accept
@@ -79,10 +79,10 @@ The current model classes supported are:
 
 ### **Gender**
 
-A feature engineered lightweight model capable of detecting names, genders, and references in a given text. Ideal for detecting genders from the text.
+A lightweight model with advanced features capable of recognising names, genders, and allusions in a text. Gender detection from text is a breeze with this tool.
 
 ![gender](img/gender.png)
 
 
-One of the biggest data samples currently available, ranging from all the different ethnicities, the current data points stand at 3.23l. The model is a combination of context resolvers and classifiers to identify references of persons and names and identify genders for them.
+The current data points stand at 3.23l, making it one of the largest data samples currently available, spanning all ethnicities. The model combines context resolvers and classifiers to identify references to people and names, as well as their genders.
 

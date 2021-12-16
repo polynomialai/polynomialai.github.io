@@ -28,19 +28,15 @@ Create a project folder and a venv folder within:
 
 ```bash
 $ mkdir myproject
-
 $ cd myproject
-
 $ python3 -m venv venv
 ```
 **Windows**
 
 ```
- mkdir myproject
-
- cd myproject
-
- py -3 -m venv venv
+ > mkdir myproject
+ > cd myproject
+ > py -3 -m venv venv
 ```
 **Activate the environment**
 
@@ -48,11 +44,13 @@ Before you work on your project, activate the corresponding environment:
 
 **macOS/LINUX**
 
-`$ . venv/bin/activate`
-
+```
+$ . venv/bin/activate
+```
 **Windows**
-
-\&gt; venv\Scripts\activate
+```
+> venv\Scripts\activate
+```
 
 Your shell prompt will change to show the name of the activated environment.
 
@@ -60,7 +58,9 @@ Your shell prompt will change to show the name of the activated environment.
 
 Within the activated environment, use the following command to install Lens:
 
-**$pip install lens-sdk**
+```bash
+$ pip install https://github.com/polynomialai/lens_core_sdk.git
+```
 
 **Getting Started With Lens API**
 
@@ -68,7 +68,7 @@ This Page will give you a good introduction to Lens. Before getting started with
 
 Below are the code snippets to make a POST request and get the response back.
 
-**\*Python\***
+**Python**
 ```python
 import requests, json
 
@@ -106,310 +106,181 @@ response = requests.post(url, headers=headers, data=json.dumps(payload))
 print(response.text, response.status_code)
 
 ```
-**\*\*cURL\*\***
+**cURL**
+```c
+curl --location --request POST 'lensservice.polynomial.ai/kit/analyze' \
+--header 'accesskey: {{key}}' \
+--header 'agentID: 61b5efa89ef90206c8541bba' \
+--data-raw '{
+    "data":  [
+      {
+       "user_id": 1543,
+       "full_name": "Aparna Pothanis",
+       "email": "aparnna_pothanis@polynomial.ai",
+       "name": "Polynomial",
+       "utterance": "Hi everyone",
+       "identifier": 2,
+       "start_time": "2021-10-19 18:00:55.760",
+       "end_time": "2021-10-19 18:00:56.780",
+     },
+     {
+       "user_id": 1543,
+       "full_name": "Revant Amingad",
+       "email": "ramingad@gainsight.com",
+       "name": "Gainsight",
+       "utterance": "  Good afternoon.",
+       "identifier": 3,
+       "start_time": "2021-10-19 18:00:57.859",
+       "end_time": "2021-10-19 18:01:01.250",
+     },
+    {<->},
+    {<->}
+ ]
+}’
 
-curl --location --request POST "lensservice.polynomial.ai/kit/analyze" \
+```
 
---header "accesskey: {{key}}" \
+**NodeJs - Native**
 
---header "agentID: 61b5efa89ef90206c8541bba" \
-
---data-raw "{
-
-"data": [
-
-{
-
-"user\_id": 1543,
-
-"full\_name": "Aparna Pothanis",
-
-"email": "aparnna\_pothanis@polynomial.ai",
-
-"name": "Polynomial",
-
-"utterance": "Hi everyone",
-
-"identifier": 2,
-
-"start\_time": "2021-10-19 18:00:55.760",
-
-"end\_time": "2021-10-19 18:00:56.780",
-
-},
-
-{
-
-"user\_id": 1543,
-
-"full\_name": "Revant Amingad",
-
-"email": "ramingad@gainsight.com",
-
-"name": "Gainsight",
-
-"utterance": " Good afternoon.",
-
-"identifier": 3,
-
-"start\_time": "2021-10-19 18:00:57.859",
-
-"end\_time": "2021-10-19 18:01:01.250",
-
-},
-
-{\&lt;-\&gt;},
-
-{\&lt;-\&gt;}
-
-]
-
-}"
-
-**\*\*NodeJs - Native\*\***
-
-var https = require("follow-redirects").https;
-
-var fs = require("fs");
-
+```js
+var https = require('follow-redirects').https;
+var fs = require('fs');
+ 
 var options = {
-
-"method": "POST",
-
-"hostname": "lensservice.polynomial.ai",
-
-"path": "/kit/analyze",
-
-"headers": {
-
-"accesskey": "{{key}}",
-
-"agentID": "61b5efa89ef90206c8541bba"
-
-},
-
-"maxRedirects": 20
-
+  'method': 'POST',
+  'hostname': 'lensservice.polynomial.ai',
+  'path': '/kit/analyze',
+  'headers': {
+    'accesskey': '{{key}}',
+    'agentID': '61b5efa89ef90206c8541bba'
+  },
+  'maxRedirects': 20
 };
-
+ 
 var req = https.request(options, function (res) {
-
-var chunks = [];
-
-res.on("data", function (chunk) {
-
-chunks.push(chunk);
-
+  var chunks = [];
+ 
+  res.on("data", function (chunk) {
+    chunks.push(chunk);
+  });
+ 
+  res.on("end", function (chunk) {
+    var body = Buffer.concat(chunks);
+    console.log(body.toString());
+  });
+ 
+  res.on("error", function (error) {
+    console.error(error);
+  });
 });
-
-res.on("end", function (chunk) {
-
-var body = Buffer.concat(chunks);
-
-console.log(body.toString());
-
-});
-
-res.on("error", function (error) {
-
-console.error(error);
-
-});
-
-});
-
-var postData = "{
-
-"data": [
-
-{
-
-"user\_id": 1543,
-
-"full\_name": "Aparna Pothanis",
-
-"email": "aparnna\_pothanis@polynomial.ai",
-
-"name": "Polynomial",
-
-"utterance": "Hi everyone",
-
-"identifier": 2,
-
-"start\_time": "2021-10-19 18:00:55.760",
-
-"end\_time": "2021-10-19 18:00:56.780",
-
-},
-
-{
-
-"user\_id": 1543,
-
-"full\_name": "Revant Amingad",
-
-"email": "ramingad@gainsight.com",
-
-"name": "Gainsight",
-
-"utterance": " Good afternoon.",
-
-"identifier": 3,
-
-"start\_time": "2021-10-19 18:00:57.859",
-
-"end\_time": "2021-10-19 18:01:01.250",
-
-},
-
-{\&lt;-\&gt;},
-
-{\&lt;-\&gt;}
-
-]
-
-}"
-
+ 
+var postData = '{
+    "data":  [
+      {
+       "user_id": 1543,
+       "full_name": "Aparna Pothanis",
+       "email": "aparnna_pothanis@polynomial.ai",
+       "name": "Polynomial",
+       "utterance": "Hi everyone",
+       "identifier": 2,
+       "start_time": "2021-10-19 18:00:55.760",
+       "end_time": "2021-10-19 18:00:56.780",
+     },
+     {
+       "user_id": 1543,
+       "full_name": "Revant Amingad",
+       "email": "ramingad@gainsight.com",
+       "name": "Gainsight",
+       "utterance": "  Good afternoon.",
+       "identifier": 3,
+       "start_time": "2021-10-19 18:00:57.859",
+       "end_time": "2021-10-19 18:01:01.250",
+     },
+    {<->},
+    {<->}
+ ]
+}'
+ 
 req.write(postData);
-
+ 
 req.end();
+```
 
-**\*\*NodeJs - Request\*\***
+**NodeJs - Request**
 
-var request = require("request");
-
+```js
+var request = require('request');
 var options = {
-
-"method": "POST",
-
-"url": "lensservice.polynomial.ai/kit/kit/analyze",
-
-"headers": {
-
-"accesskey": "{{key}}",
-
-"agentID": "61b5efa89ef90206c8541bba"
-
-},
-
-body: "{
-
-"data": [
-
-{
-
-"user\_id": 1543,
-
-"full\_name": "Aparna Pothanis",
-
-"email": "aparnna\_pothanis@polynomial.ai",
-
-"name": "Polynomial",
-
-"utterance": "Hi everyone",
-
-"identifier": 2,
-
-"start\_time": "2021-10-19 18:00:55.760",
-
-"end\_time": "2021-10-19 18:00:56.780",
-
-},
-
-{
-
-"user\_id": 1543,
-
-"full\_name": "Revant Amingad",
-
-"email": "ramingad@gainsight.com",
-
-"name": "Gainsight",
-
-"utterance": " Good afternoon.",
-
-"identifier": 3,
-
-"start\_time": "2021-10-19 18:00:57.859",
-
-"end\_time": "2021-10-19 18:01:01.250",
-
-},
-
-{\&lt;-\&gt;},
-
-{\&lt;-\&gt;}
-
-]
-
-}"
-
+  'method': 'POST',
+  'url': 'lensservice.polynomial.ai/kit/kit/analyze',
+  'headers': {
+    'accesskey': '{{key}}',
+    'agentID': '61b5efa89ef90206c8541bba'
+  },
+  body: '{
+    "data":  [
+      {
+       "user_id": 1543,
+       "full_name": "Aparna Pothanis",
+       "email": "aparnna_pothanis@polynomial.ai",
+       "name": "Polynomial",
+       "utterance": "Hi everyone",
+       "identifier": 2,
+       "start_time": "2021-10-19 18:00:55.760",
+       "end_time": "2021-10-19 18:00:56.780",
+     },
+     {
+       "user_id": 1543,
+       "full_name": "Revant Amingad",
+       "email": "ramingad@gainsight.com",
+       "name": "Gainsight",
+       "utterance": "  Good afternoon.",
+       "identifier": 3,
+       "start_time": "2021-10-19 18:00:57.859",
+       "end_time": "2021-10-19 18:01:01.250",
+     },
+    {<->},
+    {<->}
+ ]
+}'
 };
-
 request(options, function (error, response) {
-
-if (error) throw new Error(error);
-
-console.log(response.body);
-
+  if (error) throw new Error(error);
+  console.log(response.body);
 });
-
-**Sample Request Json**
-
-{
-
-"data": [
-
-{
-
-"user\_id": 1543,
-
-"full\_name": "Aparna Pothanis",
-
-"email": "aparnna\_pothanis@polynomial.ai",
-
-"name": "Polynomial",
-
-"utterance": "Hi everyone",
-
-"identifier": 2,
-
-"start\_time": "2021-10-19 18:00:55.760",
-
-"end\_time": "2021-10-19 18:00:56.780",
-
-},
-
-{
-
-"user\_id": 1543,
-
-"full\_name": "Revant Amingad",
-
-"email": "ramingad@gainsight.com",
-
-"name": "Gainsight",
-
-"utterance": " Good afternoon.",
-
-"identifier": 3,
-
-"start\_time": "2021-10-19 18:00:57.859",
-
-"end\_time": "2021-10-19 18:01:01.250",
-
-},
-
-{\&lt;-\&gt;},
-
-{\&lt;-\&gt;}
-
-]
-
-}
+```
 
 **Request Parameter**
 
+Sample Request Json
+```json
+{
+  "data": [
+       {
+        "user_id": 1543,
+        "full_name": "Aparna Pothanis",
+        "email": "aparnna_pothanis@polynomial.ai",
+        "name": "Polynomial",
+        "utterance": "Hi everyone",
+       "identifier": 2,
+        "start_time": "2021-10-19 18:00:55.760",
+        "end_time": "2021-10-19 18:00:56.780",
+      },
+      {
+        "user_id": 1543,
+        "full_name": "Revant Amingad",
+        "email": "ramingad@gainsight.com",
+        "name": "Gainsight",
+        "utterance": "  Good afternoon.",
+        "identifier": 3,
+        "start_time": "2021-10-19 18:00:57.859",
+        "end_time": "2021-10-19 18:01:01.250",
+      },
+      {<->},
+      {<->}
+  ]
+}
+```
 **Header**
 
 - accessKey : Unique key provided by the Agent
@@ -428,69 +299,43 @@ console.log(response.body);
 
 **Sample Response Json**
 
+```json
 {
-
-"prediction": {
-
-"genderDistribution": {
-
-"F": 111,
-
-"M": 690
-
-},
-
-"genderLinguisticInsight": {
-
-"M": {
-
-"Accept": 97,
-
-"Continuer": 47,
-
-"Emphasis": 3,
-
-"Greet": 9,
-
-"Reject": 1,
-
-"Statement": 479,
-
-"System": 6,
-
-"nAnswer": 3,
-
-"whQuestion": 15,
-
-"yAnswer": 18,
-
-"ynQuestion": 12
-
-},
-
-"F": {
-
-"Accept": 7,
-
-"Continuer": 8,
-
-"Greet": 1,
-
-"Statement": 90,
-
-"yAnswer": 5
-
+ "prediction": {
+   "genderDistribution": {
+     "F": 111,
+     "M": 690
+   },
+   "genderLinguisticInsight": {
+     "M": {
+       "Accept": 97,
+       "Continuer": 47,
+       "Emphasis": 3,
+       "Greet": 9,
+       "Reject": 1,
+       "Statement": 479,
+       "System": 6,
+       "nAnswer": 3,
+       "whQuestion": 15,
+       "yAnswer": 18,
+       "ynQuestion": 12
+     },
+     "F": {
+       "Accept": 7,
+       "Continuer": 8,
+       "Greet": 1,
+       "Statement": 90,
+       "yAnswer": 5
+     }
+   }
+ }
 }
 
-}
-
-}
-
-}
+```
 
 **Response Json**
 
 - genderDistribution : Count of Male/Female
 - genderLinguisticInsight : Total count of Linguistic Insights of each gender.
 
-**\*\*Note\*\* :** The response may vary according to the brains selected while agent creation.
+**Note:** The response may vary according to the brains selected while agent creation.

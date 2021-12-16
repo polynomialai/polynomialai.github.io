@@ -3,5 +3,5 @@
 ## Table of Contents
 - [Installation](installation.md)
 - [Getting Started With Lens API](gettingStarted.md)
-
-
+- [API Authentication](agentId.md)
+- [Lens Brains](brains.md)

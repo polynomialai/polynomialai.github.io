@@ -6,17 +6,17 @@ We recommend using python 3.7.
 
 **What is an SDK?**
 
-[SDK](https://clevertap.com/glossary/sdk/) stands for software development kit or devkit for short. It"s a set of software tools and programs used by developers to create [applications](https://clevertap.com/glossary/app/) for specific platforms. SDK tools will include a range of things, including libraries, documentation, code samples, processes, and guides that developers can use and integrate into their own apps. SDKs are designed to be used for specific platforms or programming languages.
+SDK stands for software development kit or devkit for short. It's a collection of software tools and programmes that developers utilise to create apps for various platforms. SDK tools will feature a variety of items that developers may utilise and incorporate into their own projects, such as libraries, documentation, code examples, workflows, and instructions. SDKs are software development kits that are tailored to specific platforms or programming languages.
 
 **Virtual Environment**
 
 Use a virtual environment to manage the dependencies for your project, both in development and in production.
 
-What problem does a virtual environment solve? The more Python projects you have, the more likely it is that you need to work with different versions of Python libraries, or even Python itself. Newer versions of libraries for one project can break compatibility in another project.
+What is the purpose of a virtual environment? With more Python projects, you're more likely to need to work with multiple versions of Python libraries, or even Python itself. Newer library versions for one project may break compatibility in another.
 
-Virtual environments are independent groups of Python libraries, one for each project. Packages installed for one project will not affect other projects or the operating system"s packages.
+Each project has its own virtual environment, which is a collection of Python libraries. Packages installed for one project have no effect on the packages installed for other projects or the operating system.
 
-Python comes bundled with the [venv](https://docs.python.org/3/library/venv.html#module-venv) module to create virtual environments.
+The [venv](https://docs.python.org/3/library/venv.html#module-venv) module in Python is used to construct virtual environments.
 
 **Create an environment**
 

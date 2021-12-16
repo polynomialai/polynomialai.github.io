@@ -1,8 +1,8 @@
 **Getting Started With Lens API**
 
-This Page will give you a good introduction to Lens. Before getting started with Lens, Follow Installation steps to install Lens.
+This page will provide you with an excellent introduction to Lens. Before you begin using Lens, make sure you've completed the installation instructions.
 
-Below are the code snippets to make a POST request and get the response back.
+The code snippets to make a POST request and receive the response are listed below.
 
 **Python**
 ```python
@@ -274,4 +274,4 @@ Sample Request Json
 - genderDistribution : Count of Male/Female
 - genderLinguisticInsight : Total count of Linguistic Insights of each gender.
 
-**Note:** The response may vary according to the brains selected while agent creation.
+**Note:** The response may differ depending on the brains chosen during agent creation.

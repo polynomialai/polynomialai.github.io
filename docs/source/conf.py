@@ -22,7 +22,7 @@ copyright = '2022, Vaibhav Kumar'
 author = 'Vaibhav Kumar'
 
 # The full version, including alpha/beta/rc tags
-release = 'V1.0.0'
+release = '1.0.0'
 
 
 # -- General configuration ---------------------------------------------------

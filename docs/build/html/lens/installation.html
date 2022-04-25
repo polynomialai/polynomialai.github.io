@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>&lt;no title&gt; &mdash; Polynomial.AI 1.0.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> Polynomial.AI
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul class="simple">
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Polynomial.AI</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>&lt;no title&gt;</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/lens/installation.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <p><strong>INSTALLATION</strong></p>
+<p><strong>Python Version</strong></p>
+<p>Python 3.7 is the version we recommend.</p>
+<p><strong>What is an SDK?</strong></p>
+<p>SDK stands for software development kit or devkit for short. It’s a
+collection of software tools and programmes that developers utilise to
+create apps for various platforms. SDK tools will feature a variety of
+items that developers may utilise and incorporate into their own
+projects, such as libraries, documentation, code examples, workflows,
+and instructions. SDKs are software development kits that are tailored
+to specific platforms or programming languages.</p>
+<p><strong>Virtual Environment</strong></p>
+<p>Use a virtual environment to manage the dependencies for your project,
+both in development and in production.</p>
+<p>What is the purpose of a virtual environment? With more Python projects,
+you’re more likely to need to work with multiple versions of Python
+libraries, or even Python itself. Newer library versions for one project
+may break compatibility in another.</p>
+<p>Each project has its own virtual environment, which is a collection of
+Python libraries. Packages installed for one project have no effect on
+the packages installed for other projects or the operating system.</p>
+<p>The <a class="reference external" href="https://docs.python.org/3/library/venv.html#module-venv">venv</a> module in Python is used to construct virtual environments.</p>
+<p><strong>Create an environment</strong></p>
+<p>Create a project folder and a venv folder within:</p>
+<p><strong>macOS/LINUX</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ mkdir myproject
+$ <span class="nb">cd</span> myproject
+$ python3 -m venv venv
+</pre></div>
+</div>
+<p><strong>Windows</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">mkdir</span> <span class="n">myproject</span>
+<span class="o">&gt;</span> <span class="n">cd</span> <span class="n">myproject</span>
+<span class="o">&gt;</span> <span class="n">py</span> <span class="o">-</span><span class="mi">3</span> <span class="o">-</span><span class="n">m</span> <span class="n">venv</span> <span class="n">venv</span>
+</pre></div>
+</div>
+<p><strong>Activate the environment</strong></p>
+<p>Before you work on your project, activate the corresponding environment:</p>
+<p><strong>macOS/LINUX</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ . venv/bin/activate
+</pre></div>
+</div>
+<p><strong>Windows</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">venv</span>\<span class="n">Scripts</span>\<span class="n">activate</span>
+</pre></div>
+</div>
+<p>Your shell prompt will change to show the name of the activated
+environment.</p>
+<p><strong>Install Lens</strong></p>
+<p>Within the activated environment, use the following command to install
+Lens:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ pip install https://github.com/polynomialai/lens_core_sdk.git
+</pre></div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Vaibhav Kumar.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

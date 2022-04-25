@@ -9,7 +9,7 @@ API Authentication
    Agent ID and Access Key, which is used to authenticate the API by
    sending it in the request header.
 
-.. image:: docs/source/lens/img/agentId_accessKey.png
+.. image:: img/agentId_accessKey.png
    :alt: Image
 
 An image of the app where the user can acquire the Agent ID and Access

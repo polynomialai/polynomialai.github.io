@@ -1,4 +1,5 @@
-**Getting Started With Lens API**
+Getting Started With Lens API
+=============================
 
 This page will provide you with an excellent introduction to Lens.
 Before you begin using Lens, make sure you've completed the installation
@@ -46,39 +47,41 @@ listed below.
 
    print(response.text, response.status_code)
 
-::
 
-   **cURL**
-   ```c
+**cURL**
+
+.. code:: c
+
    curl --location --request POST 'lensservice.polynomial.ai/kit/analyze' \
-   --header 'accesskey: {{key}}' \
-   --header 'agentID: 61b5efa89ef90206c8541bba' \
-   --data-raw '{
-       "data":  [
-         {
-          "user_id": 1543,
-          "full_name": "Aparna Pothanis",
-          "email": "aparnna_pothanis@polynomial.ai",
-          "name": "Polynomial",
-          "utterance": "Hi everyone",
-          "identifier": 2,
-          "start_time": "2021-10-19 18:00:55.760",
-          "end_time": "2021-10-19 18:00:56.780",
-        },
-        {
-          "user_id": 1543,
-          "full_name": "Revant Amingad",
-          "email": "ramingad@gainsight.com",
-          "name": "Gainsight",
-          "utterance": "  Good afternoon.",
-          "identifier": 3,
-          "start_time": "2021-10-19 18:00:57.859",
-          "end_time": "2021-10-19 18:01:01.250",
-        },
-       {<->},
-       {<->}
+  --header 'accesskey: {{key}}' \
+  --header 'agentID: 61b5efa89ef90206c8541bba' \
+  --data-raw '{
+
+  "data":  [
+    {
+      "user_id": 1543,
+      "full_name": "Aparna Pothanis",
+      "email": "aparnna_pothanis@polynomial.ai",
+      "name": "Polynomial",
+      "utterance": "Hi everyone",
+      "identifier": 2,
+      "start_time": "2021-10-19 18:00:55.760",
+      "end_time": "2021-10-19 18:00:56.780",
+  },
+    {
+      "user_id": 1543,
+      "full_name": "Revant Amingad",
+      "email": "ramingad@gainsight.com",
+      "name": "Gainsight",
+      "utterance": "  Good afternoon.",
+      "identifier": 3,
+      "start_time": "2021-10-19 18:00:57.859",
+      "end_time": "2021-10-19 18:01:01.250",
+    },
+    {<->},
+    {<->}
     ]
-   }’
+    }'
 
 **NodeJs - Native**
 
@@ -190,13 +193,15 @@ listed below.
      console.log(response.body);
    });
 
-::
 
 
-   **Request Parameter**
 
-   Sample Request Json
-   ```json
+**Request Parameter**
+
+Sample Request Json
+
+.. code:: json
+
    {
      "data": [
           {
@@ -223,7 +228,6 @@ listed below.
          {<->}
      ]
    }
-
 **Header**
 
 -  accessKey : Unique key provided by the Agent

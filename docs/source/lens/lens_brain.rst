@@ -1,4 +1,4 @@
-**Lens Brains**
+Lens Brains
 ===============
 
 Lens features state-of-the-art trained machine learning Brains that can
@@ -6,7 +6,7 @@ extract detailed insights from any textual source.
 
 .. _some-of-the-brains-are-:
 
-**Some of the Brains are :**
+Some of the Brains are :
 ----------------------------
 
 **Sentiment Brain**
@@ -18,7 +18,7 @@ Businesses may find Sentiment Detection Brain to be highly valuable in
 determining the social sentiment of their brand, product, or service.
 Perfect for identifying sentiment in various text parts.
 
-.. image:: docs/source/lens/img/sentiment.png
+.. image:: img/sentiment.png
    :alt: Sentiment Brain
 
 A state-of-the-art transformer model was used to create this. With over
@@ -43,7 +43,7 @@ The emotion brain is a tool for detecting and comprehending the
 underlying emotions expressed in textual data. Suitable for a long
 paragraph or a series of text.
 
-.. image:: docs/source/lens/img/emotion.png
+.. image:: img/emotion.png
    :alt: Emotion Brain
 
 Models based on state-of-the-art transformers were used to create this
@@ -71,7 +71,7 @@ Brain to learn the tone of their customers' messages, as well as their
 brand, product, or service. All types of texts are supported by Tone
 Detection Brain.
 
-.. image:: docs/source/lens/img/tone.png
+.. image:: img/tone.png
    :alt: tone
 
 A one-of-a-kind transformer-based model that was fine-tuned with over
@@ -97,7 +97,7 @@ that, to the best of one's ability, express the major concepts of a
 text. Aspect Brain works best with paragraphs that are medium to large
 in size.
 
-.. image:: docs/source/lens/img/aspect.png
+.. image:: img/aspect.png
    :alt: aspect brain
 
 Clustering and component analysis, an unsupervised learning method, are
@@ -110,7 +110,7 @@ To determine the type of sentences, a neural network-based model was
 trained to analyse and interpret the language and grammatical rules.
 Identifying questions and greetings has never been easier.
 
-.. image:: docs/source/lens/img/linguistic.png
+.. image:: img/linguistic.png
    :alt: linguistic
 
 Specifically created to aid in the comprehension of language and grammar
@@ -135,7 +135,7 @@ A lightweight model with advanced features capable of recognising names,
 genders, and allusions in a text. Gender detection from text is a breeze
 with this tool.
 
-.. image:: https://github.com/polynomialai/polynomialai.github.io/blob/master/docs/_static/gender.png
+.. image:: img/gender.png
    :alt: gender
 
 The current data points stand at 3.23l, making it one of the largest

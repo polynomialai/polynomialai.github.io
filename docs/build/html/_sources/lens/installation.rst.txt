@@ -1,4 +1,5 @@
-**INSTALLATION**
+Installation
+============
 
 **Python Version**
 

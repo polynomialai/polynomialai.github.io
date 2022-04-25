@@ -8,24 +8,10 @@ Welcome to Polynomial.AI's documentation!
 
 .. toctree::
    :maxdepth: 1
-   :caption: Contents:
+   :caption: Table of Contents:
 
-
-
-
-
-Table of Contents
------------------
-
--  `Introduction`_
--  `Lens Brains`_
--  `Installation`_
--  `API Authentication`_
--  `Getting Started With Lens API`_
-
-.. _Introduction: docs/source/lens/lens_introduction.rst
-.. _Lens Brains: docs/source/lens/lens_brain.rst
-.. _Installation: docs/source/lens/installation.rst
-.. _API Authentication: docs/source/lens/authentication.rst
-.. _Getting Started With Lens API: docs/build/html/lens/getting_started.html
-
+   lens/lens_introduction.rst
+   lens/lens_brain.rst
+   lens/authentication.rst
+   lens/installation.rst
+   lens/getting_started.rst

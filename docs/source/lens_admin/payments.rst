@@ -1,5 +1,5 @@
-Payments
-========
+Get All Plans
+=============
 
 
 **Code snippet for Python Request**

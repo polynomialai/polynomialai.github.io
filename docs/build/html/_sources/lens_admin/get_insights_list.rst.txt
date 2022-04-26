@@ -1,4 +1,4 @@
-Get Brains Details
+Get Insights List
 ==================
 
 **Code snippet for Python Request**

@@ -1,7 +1,9 @@
 Agent Brains
 ===================
 
-**Code snippet for Python Request**
+**POST kit/brains**
+
+Example Request:
 
 .. code:: python
 

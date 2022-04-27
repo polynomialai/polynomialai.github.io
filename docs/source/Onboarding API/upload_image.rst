@@ -1,7 +1,9 @@
 Upload Image
 ======================
 
-**Code snippet for Python Request**
+**POST upload**
+
+Example Request:
 
 .. code:: python
 

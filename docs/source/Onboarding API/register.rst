@@ -1,7 +1,9 @@
 Register
 ========
 
-**Code snippet for Python Request**
+**POST register**
+
+Example Request:
 
 .. code:: python
 

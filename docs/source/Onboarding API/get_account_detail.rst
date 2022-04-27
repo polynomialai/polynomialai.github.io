@@ -1,7 +1,9 @@
 Get Account Detail
 ===================
 
-**Code snippet for Python Request**
+**POST get-account**
+
+Example Request:
 
 .. code:: python
 

@@ -1,7 +1,9 @@
 Update Account Detail
 ======================
 
-**Code snippet for Python Request**
+**POST change-password**
+
+Example Request:
 
 .. code:: python
 

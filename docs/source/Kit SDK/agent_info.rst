@@ -1,7 +1,9 @@
 Agent Info
 ===================
 
-**Code snippet for Python Request**
+**POST kit/analytics**
+
+Example Request:
 
 .. code:: python
 

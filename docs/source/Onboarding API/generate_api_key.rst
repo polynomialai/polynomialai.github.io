@@ -1,7 +1,9 @@
 Generate API Key
 =================
 
-**Code snippet for Python Request**
+**POST generate-api-key**
+
+Example Request:
 
 .. code:: python
 

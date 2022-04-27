@@ -1,7 +1,9 @@
 update profile
 ===================
 
-**Code snippet for Python Request**
+**POST update-profile**
+
+Example Request:
 
 .. code:: python
 

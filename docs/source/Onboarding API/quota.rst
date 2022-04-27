@@ -1,7 +1,9 @@
 Quota
 =================
 
-**Code snippet for Python Request**
+**POST quota**
+
+Example Request:
 
 .. code:: python
 

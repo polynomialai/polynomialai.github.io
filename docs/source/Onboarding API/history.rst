@@ -1,7 +1,9 @@
 History
 =================
 
-**Code snippet for Python Request**
+**POST history**
+
+Example Request:
 
 .. code:: python
 

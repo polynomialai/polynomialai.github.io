@@ -1,7 +1,9 @@
 Get Profile
 =================
 
-**Code snippet for Python Request**
+**POST get-profile**
+
+Example Request:
 
 .. code:: python
 

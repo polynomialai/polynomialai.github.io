@@ -1,7 +1,9 @@
 Meeting Kit
 ===================
 
-**Code snippet for Python Request**
+**POST kit/analyze**
+
+Example Request:
 
 .. code:: python
 

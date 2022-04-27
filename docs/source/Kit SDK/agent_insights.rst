@@ -1,7 +1,9 @@
 Agent Insights
 ===================
 
-**Code snippet for Python Request**
+**POST kit/insights**
+
+Example Request:
 
 .. code:: python
 

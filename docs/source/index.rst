@@ -7,6 +7,7 @@ Welcome to Polynomial.AI's documentation!
 =========================================
 
 .. toctree::
+   :glob:
    :maxdepth: 1
    :caption: Table of Contents:
 
@@ -15,3 +16,32 @@ Welcome to Polynomial.AI's documentation!
    lens/authentication.rst
    lens/installation.rst
    lens/getting_started.rst
+   
+
+.. toctree::
+   :glob:
+   :maxdepth: 2
+   :caption: Lens Platform API:
+
+   lens/api/lens_admin/*
+   lens/api/onboarding_api/*
+   
+
+.. toctree::
+   :glob:
+   :maxdepth: 2
+   :caption: Lens Agent API:
+
+   lens/api/lens_agent/*
+   lens/api/lens_agent/brains/*
+   lens/api/lens_agent/data_relationship/*
+   lens/api/lens_agent/insights/*
+   lens/api/lens_agent/keys_and_domain/*
+   lens/api/lens_agent/settings/*
+
+.. toctree::
+   :glob:
+   :maxdepth: 2
+   :caption: Lens SDK:
+   
+   kit_sdk/*

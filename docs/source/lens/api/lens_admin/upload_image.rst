@@ -1,7 +1,13 @@
+==================
 Upload Image
 ==================
 
-**Code snippet for Python Request**
+--------------------------------
+POST /upload-image
+--------------------------------
+Upload Image
+
+**Example Request**
 
 .. code:: python
 
@@ -22,36 +28,13 @@ Upload Image
 
     print(response.text)
 
+:Headers:     
+        apikey
 
-**Code snippet for NodeJS Request**
+:Body: 
+        file (formdata)
 
-.. code:: js
-
-    var request = require('request');
-    var fs = require('fs');
-    var options = {
-    'method': 'POST',
-    'url': 'lensservice.polynomial.ai/upload-image',
-    'headers': {
-        'apikey': '{{apiKey}}',
-        'Content-Type': 'multipart/form-data'
-    },
-    formData: {
-        'file': {
-        'value': fs.createReadStream('/Pictures/nebula.jpg'),
-        'options': {
-            'filename': 'nebula.jpg',
-            'contentType': null
-        }
-        }
-    }
-    };
-    request(options, function (error, response) {
-    if (error) throw new Error(error);
-    console.log(response.body);
-    });
-
-*Example Response*
+:Example Response:
 
 .. code:: json
 

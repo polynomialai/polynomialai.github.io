@@ -1,7 +1,13 @@
+===============
 Disable Account
 ===============
 
-**Code snippet for Python Request**
+--------------------------------
+POST /disable-account
+--------------------------------
+Disable acount
+
+**Example Request**
 
 .. code:: python
 
@@ -19,21 +25,15 @@ Disable Account
     print(response.text)
 
 
-**Code snippet for NodeJS Request**
+:Headers:     
+      apikey
 
-.. code:: js
+:Params:
 
-    var request = require('request');
-    var options = {
-    'method': 'POST',
-    'url': 'lensservice.polynomial.ai/disable-account',
-    'headers': {
-        'apikey': '{{apiKey}}'
-    },
-    body: {"email": "abc@email.com"}
+:Request Body:
 
-    };
-    request(options, function (error, response) {
-    if (error) throw new Error(error);
-    console.log(response.body);
-    });    
+.. code:: json
+    
+    {
+        "email": "abc@email.com"
+    }

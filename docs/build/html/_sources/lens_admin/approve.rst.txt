@@ -1,4 +1,4 @@
-Get Brains Details
+Approve User
 ==================
 
 **Code snippet for Python Request**

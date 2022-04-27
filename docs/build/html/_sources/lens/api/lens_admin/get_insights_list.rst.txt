@@ -1,7 +1,13 @@
-Get Brains Details
+==================
+Get Insights List
 ==================
 
-**Code snippet for Python Request**
+--------------------------------
+POST /agents/get-insights-list
+--------------------------------
+Get insights list
+
+**Example Request**
 
 .. code:: python
 
@@ -21,25 +27,12 @@ Get Brains Details
     print(response.text)
 
 
-**Code snippet for NodeJS Request**
+:Headers:     
+      apikey
 
-.. code:: js
+:Params:
 
-    var request = require('request');
-    var options = {
-    'method': 'GET',
-    'url': 'lensservice.polynomial.ai/insights/get-insights-list',
-    'headers': {
-        'apikey': '{{apikey}}',
-        'Content-Type': 'application/json'
-    }
-    };
-    request(options, function (error, response) {
-    if (error) throw new Error(error);
-    console.log(response.body);
-    });
-
-*Example Response*
+:Example Response:
 
 .. code:: json
 

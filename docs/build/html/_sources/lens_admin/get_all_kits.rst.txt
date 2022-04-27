@@ -1,5 +1,5 @@
-All Kits
-========
+Get All Kits
+============
 
 **Code snippet for Python Request**
 

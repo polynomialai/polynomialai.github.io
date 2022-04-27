@@ -1,7 +1,13 @@
+===================
 Get Company Details
 ===================
 
-**Code snippet for Python Request**
+--------------------------------
+POST /get-company-details
+--------------------------------
+Get company details
+
+**Example Request**
 
 .. code:: python
 
@@ -23,29 +29,20 @@ Get Company Details
     print(response.text)
 
 
-**Code snippet for NodeJS Request**
+:Headers:     
+        apikey
 
-.. code:: js
+:Params:
 
-    var request = require('request');
-    var options = {
-    'method': 'POST',
-    'url': 'lensservice.polynomial.ai/get-company-details',
-    'headers': {
-        'apikey': '{{apiKey}}',
-        'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-        "email": "abcd@gmail.com"
-    })
+:Request Body:
 
-    };
-    request(options, function (error, response) {
-    if (error) throw new Error(error);
-    console.log(response.body);
-    });
+.. code:: json
+    
+    {
+        "email": "himanshu.t@polynomial.ai"
+    }
 
-*Example Response*
+:Example Response:
 
 .. code:: json
 

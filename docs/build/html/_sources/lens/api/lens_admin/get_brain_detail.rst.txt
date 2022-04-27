@@ -1,7 +1,13 @@
+==================
 Get Brains Details
 ==================
 
-**Code snippet for Python Request**
+--------------------------------
+POST /brains/get-all-brains
+--------------------------------
+Get brains details
+
+**Example Request**
 
 .. code:: python
 
@@ -20,26 +26,13 @@ Get Brains Details
 
     print(response.text)
 
+:Headers:     
+      apikey
 
-**Code snippet for NodeJS Request**
+:Params:     
+      agentID
 
-.. code:: js
-
-    var request = require('request');
-    var options = {
-    'method': 'GET',
-    'url': 'lensservice.polynomial.ai/brains/get-all-brains',
-    'headers': {
-        'apikey': '{{apikey}}',
-        'Content-Type': 'application/json'
-    }
-    };
-    request(options, function (error, response) {
-    if (error) throw new Error(error);
-    console.log(response.body);
-    });
-
-*Example Response*
+:Example Response:
 
 .. code:: json
 

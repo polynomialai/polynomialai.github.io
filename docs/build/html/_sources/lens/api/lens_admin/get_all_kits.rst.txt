@@ -1,14 +1,19 @@
+========
 All Kits
 ========
+--------------------------------
+POST /kit/get-all-kits
+--------------------------------
+Get all Kits
 
-**Code snippet for Python Request**
+**Example Request**
 
 .. code:: python
 
     import requests
     import json
 
-    url = "lensservice.polynomial.ai/kit/get-all-kits"
+    url = "http://lensservice.polynomial.ai/kit/get-all-kits"
 
     payload = ""
     headers = {
@@ -20,26 +25,12 @@ All Kits
 
     print(response.text)
 
+:Headers:     
+      apikey
 
-**Code snippet for NodeJS Request**
-
-.. code:: js
-
-    var request = require('request');
-    var options = {
-    'method': 'GET',
-    'url': 'lensservice.polynomial.ai/kit/get-all-kits',
-    'headers': {
-        'apikey': '{{apikey}}',
-        'Content-Type': 'application/json'
-    }
-    };
-    request(options, function (error, response) {
-    if (error) throw new Error(error);
-    console.log(response.body);
-    });
+:Params: 
     
-*Example Response*
+:Example Response:
 
 .. code:: json
 

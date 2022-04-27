@@ -1,8 +1,13 @@
+=========
 Payments
-========
+=========
 
+--------------------------------
+POST /payment/get-all-plans
+--------------------------------
+Get all plans
 
-**Code snippet for Python Request**
+**Example Request**
 
 .. code:: python
 
@@ -21,26 +26,12 @@ Payments
 
     print(response.text)
 
+:Headers:     
+      apikey
 
-**Code snippet for NodeJS Request**
+:Params: 
 
-.. code:: js
-
-    var request = require('request');
-    var options = {
-    'method': 'GET',
-    'url': 'http://lensservice.polynomial.ai/payment/get-all-plans',
-    'headers': {
-        'apikey': '{{apikey}}',
-        'Content-Type': 'application/json'
-    }
-    };
-    request(options, function (error, response) {
-    if (error) throw new Error(error);
-    console.log(response.body);
-    });
-
-*Example Response*
+:Example Response:
 
 .. code:: json
 

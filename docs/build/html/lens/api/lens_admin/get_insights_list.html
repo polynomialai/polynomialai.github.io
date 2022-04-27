@@ -7,7 +7,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Get Brains Details &mdash; Polynomial.AI 1.0.0 documentation</title>
+  <title>Get Insights List &mdash; Polynomial.AI 1.0.0 documentation</title>
   
 
   
@@ -30,7 +30,7 @@
   <link rel="stylesheet" href="../../../_static/css/theme.min.css" type="text/css" />
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Get Page Ddescription" href="get_page_description.html" />
+    <link rel="next" title="Get Page Description" href="get_page_description.html" />
     <link rel="prev" title="Get Company Details" href="get_company_detail.html" /> 
 
 </head>
@@ -70,7 +70,7 @@
     
       <li><a href="../../../index.html">Docs</a></li>
         
-      <li>Get Brains Details</li>
+      <li>Get Insights List</li>
     
     
       <li class="breadcrumbs-aside">
@@ -122,19 +122,58 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Lens Platform API:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="add_team.html">Add Team</a></li>
-<li class="toctree-l1"><a class="reference internal" href="approve.html">Get Brains Details</a></li>
-<li class="toctree-l1"><a class="reference internal" href="disable_account.html">Disable Account</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_all_kits.html">All Kits</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_brain_detail.html">Get Brains Details</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_brains_list.html">Get Brains List</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_company_detail.html">Get Company Details</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Get Brains Details</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_page_description.html">Get Page Ddescription</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_teams.html">Get Teams</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_user_history.html">Get User History</a></li>
-<li class="toctree-l1"><a class="reference internal" href="payments.html">Payments</a></li>
-<li class="toctree-l1"><a class="reference internal" href="upload_image.html">Upload Image</a></li>
+<li class="toctree-l1"><a class="reference internal" href="add_team.html">Add Team</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="add_team.html#post-add-team">POST /add-team</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="approve.html">Approve</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="approve.html#post-approve">POST /approve</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="disable_account.html">Disable Account</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="disable_account.html#post-disable-account">POST /disable-account</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="get_all_kits.html">All Kits</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="get_all_kits.html#post-kit-get-all-kits">POST /kit/get-all-kits</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="get_brain_detail.html">Get Brains Details</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="get_brain_detail.html#post-brains-get-all-brains">POST /brains/get-all-brains</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="get_brains_list.html">Get Brains List</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="get_brains_list.html#post-agents-get-brains-list">POST /agents/get-brains-list</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="get_company_detail.html">Get Company Details</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="get_company_detail.html#post-get-company-details">POST /get-company-details</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Get Insights List</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#post-agents-get-insights-list">POST /agents/get-insights-list</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="get_page_description.html">Get Page Description</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="get_page_description.html#post-get-page-description-page-insights">POST /get-page-description?page=insights</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="get_teams.html">Get Teams</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="get_teams.html#post-get-teams">POST /get-teams</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="get_user_history.html">Get User History</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="get_user_history.html#post-get-user-history">POST /get-user-history</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="payments.html">Payments</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="payments.html#post-payment-get-all-plans">POST /payment/get-all-plans</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="upload_image.html">Upload Image</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="upload_image.html#post-upload-image">POST /upload-image</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../onboarding_api/change_password.html">Change Password</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../onboarding_api/generate_api_key.html">Generate API Key</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../onboarding_api/get_account_detail.html">Get Account Detail</a></li>
@@ -168,7 +207,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../lens_agent/brains/add_edit_brains.html#post-agents-add-edit-brains">POST /agents/add-edit-brains</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../lens_agent/brains/get_agent_brain_selected.html">GET Agent Brain Selected</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="../lens_agent/brains/get_agent_brain_selected.html">Agent Brain Selected</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../lens_agent/brains/get_agent_brain_selected.html#get-agents-get-agent-brains-selected">GET /agents/get-agent-brains-selected</a></li>
 </ul>
 </li>
@@ -236,9 +275,12 @@
                     <div class="document">
                         
                             
-  <section id="get-brains-details">
-<h1>Get Brains Details<a class="headerlink" href="#get-brains-details" title="Permalink to this headline">¶</a></h1>
-<p><strong>Code snippet for Python Request</strong></p>
+  <section id="get-insights-list">
+<h1>Get Insights List<a class="headerlink" href="#get-insights-list" title="Permalink to this headline">¶</a></h1>
+<section id="post-agents-get-insights-list">
+<h2>POST /agents/get-insights-list<a class="headerlink" href="#post-agents-get-insights-list" title="Permalink to this headline">¶</a></h2>
+<p>Get insights list</p>
+<p><strong>Example Request</strong></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
 <span class="kn">import</span> <span class="nn">json</span>
 
@@ -255,23 +297,15 @@
 <span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
 </pre></div>
 </div>
-<p><strong>Code snippet for NodeJS Request</strong></p>
-<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span><span class="w"> </span><span class="nx">request</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;request&#39;</span><span class="p">);</span><span class="w"></span>
-<span class="kd">var</span><span class="w"> </span><span class="nx">options</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="s1">&#39;method&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;GET&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="s1">&#39;url&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;lensservice.polynomial.ai/insights/get-insights-list&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="s1">&#39;headers&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="s1">&#39;apikey&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;{{apikey}}&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="s1">&#39;Content-Type&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;application/json&#39;</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
-<span class="p">};</span><span class="w"></span>
-<span class="nx">request</span><span class="p">(</span><span class="nx">options</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">error</span><span class="p">,</span><span class="w"> </span><span class="nx">response</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">error</span><span class="p">)</span><span class="w"> </span><span class="k">throw</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="ne">Error</span><span class="p">(</span><span class="nx">error</span><span class="p">);</span><span class="w"></span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">body</span><span class="p">);</span><span class="w"></span>
-<span class="p">});</span><span class="w"></span>
-</pre></div>
-</div>
-<p><em>Example Response</em></p>
+<dl class="field-list simple">
+<dt class="field-odd">Headers</dt>
+<dd class="field-odd"><p>apikey</p>
+</dd>
+<dt class="field-even">Params</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">Example Response</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="w"></span>
 <span class="w">    </span><span class="nt">&quot;success&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;success&quot;</span><span class="p">,</span><span class="w"></span>
 <span class="w">    </span><span class="nt">&quot;body&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -289,6 +323,7 @@
 <span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
+</section>
 </section>
 
 

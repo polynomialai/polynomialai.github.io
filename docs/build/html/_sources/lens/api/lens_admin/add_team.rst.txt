@@ -1,7 +1,13 @@
+========
 Add Team
 ========
 
-**Code snippet for Python Request**
+--------------------------------
+POST /add-team
+--------------------------------
+Add team
+
+**Example Request**
 
 .. code:: python
 
@@ -22,28 +28,22 @@ Add Team
     print(response.text)
 
 
-**Code snippet for NodeJS Request**
+:Headers:     
+      apikey
 
-.. code:: js
+:Params:
 
-    var request = require('request');
-    var options = {
-    'method': 'GET',
-    'url': 'lensservice.polynomial.ai/add-team',
-    'headers': {
-        'apikey': '{{apiKey}}'
+
+:Request Body:
+
+.. code:: json
+    
+    {
+        "name": "Team 2",
+        "users": ["himanshu.t@polynomial.ai"]
     }
-    body : {
-                "name": "Team 2",
-                "users": ["himanshu.t@polynomial.ai"]
-            }
-    };
-    request(options, function (error, response) {
-    if (error) throw new Error(error);
-    console.log(response.body);
-    });
 
-*Example Response*
+:Example Response:
 
 .. code:: json
 

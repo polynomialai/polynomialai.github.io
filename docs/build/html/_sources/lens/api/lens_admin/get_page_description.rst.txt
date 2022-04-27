@@ -1,13 +1,19 @@
-Get Page Ddescription
+=====================
+Get Page Description
 =====================
 
-**Code snippet for Python Request**
+----------------------------------------
+POST /get-page-description?page=insights
+----------------------------------------
+Get page description
+
+**Example Request**
 
 .. code:: python
 
     import requests
 
-    url = "http://localhost:8000/get-page-description?page=insights"
+    url = "lensservice.polynomial.ai/get-page-description?page=insights"
 
     payload={}
     headers = {}
@@ -15,25 +21,12 @@ Get Page Ddescription
     response = requests.request("GET", url, headers=headers, data=payload)
 
     print(response.text)
+:Header:
 
+:Params:
+        insights
 
-**Code snippet for NodeJS Request**
-
-.. code:: js
-
-    var request = require('request');
-    var options = {
-    'method': 'GET',
-    'url': 'http://localhost:8000/get-page-description?page=insights',
-    'headers': {
-    }
-    };
-    request(options, function (error, response) {
-    if (error) throw new Error(error);
-    console.log(response.body);
-    });
-
-*Example Response*
+:Example Response:
 
 .. code:: json
 

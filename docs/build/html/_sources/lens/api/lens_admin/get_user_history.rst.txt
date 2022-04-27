@@ -1,7 +1,13 @@
+==================
 Get User History
 ==================
 
-**Code snippet for Python Request**
+--------------------------------
+POST /get-user-history
+--------------------------------
+Get user history
+
+**Example Request**
 
 .. code:: python
 
@@ -19,24 +25,18 @@ Get User History
     print(response.text)
 
 
-**Code snippet for NodeJS Request**
+:Headers:     
+      apikey
+    
+:Params:
 
-.. code:: js
+:Request Body:
 
-    var request = require('request');
-    var options = {
-    'method': 'POST',
-    'url': 'lensservice.polynomial.ai/get-user-history',
-    'headers': {
-        'apikey': '{{apiKey}}'
-    },
-    body: {"email": "abc@email.com"}
-
-    };
-    request(options, function (error, response) {
-    if (error) throw new Error(error);
-    console.log(response.body);
-    });
+.. code:: json
+    
+    {
+        "email": "abc@email.com"
+    }
 
 
     

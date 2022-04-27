@@ -1,7 +1,13 @@
+=========
 Get Teams
 =========
 
-**Code snippet for Python Request**
+--------------------------------
+POST /get-teams
+--------------------------------
+Get teams
+
+**Example Request**
 
 .. code:: python
 
@@ -21,25 +27,12 @@ Get Teams
     print(response.text)
 
 
-**Code snippet for NodeJS Request**
+:Headers:     
+      apikey
 
-.. code:: js
+:Params:
 
-    var request = require('request');
-    var options = {
-    'method': 'GET',
-    'url': 'lensservice.polynomial.ai/get-teams',
-    'headers': {
-        'apikey': '{{apiKey}}',
-        'Content-Type': 'application/json'
-    }
-    };
-    request(options, function (error, response) {
-    if (error) throw new Error(error);
-    console.log(response.body);
-    });
-
-*Example Response*
+:Example Response:
 
 .. code:: json
 

@@ -32,6 +32,7 @@ Example Request:
 :Params:
 
 .. code:: json
+  
         [
           {
             "_id": "6180bc63c7dd291d592f3917"

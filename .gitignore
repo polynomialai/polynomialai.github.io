@@ -1,2 +1,8 @@
 .env
 .vscode
+.DS_Store
+build/.DS_Store
+build/doctrees/.DS_Store
+source/.DS_Store
+source/lens/.DS_Store
+docs/build/html/.DS_Store

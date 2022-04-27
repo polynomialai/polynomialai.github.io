@@ -44,4 +44,4 @@ Welcome to Polynomial.AI's documentation!
    :maxdepth: 2
    :caption: Lens SDK:
    
-   kit_sdk/*
+   lens/kit_sdk/*

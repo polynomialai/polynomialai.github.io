@@ -30,7 +30,7 @@
   <link rel="stylesheet" href="../../../_static/css/theme.min.css" type="text/css" />
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="update profile" href="update_profile.html" />
+    <link rel="next" title="Update Profile" href="update_profile.html" />
     <link rel="prev" title="Register" href="register.html" /> 
 
 </head>
@@ -135,16 +135,46 @@
 <li class="toctree-l1"><a class="reference internal" href="../lens_admin/get_user_history.html">Get User History</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../lens_admin/payments.html">Payments</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../lens_admin/upload_image.html">Upload Image</a></li>
-<li class="toctree-l1"><a class="reference internal" href="change_password.html">Change Password</a></li>
-<li class="toctree-l1"><a class="reference internal" href="generate_api_key.html">Generate API Key</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_account_detail.html">Get Account Detail</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_profile.html">Get Profile</a></li>
-<li class="toctree-l1"><a class="reference internal" href="history.html">History</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quota.html">Quota</a></li>
-<li class="toctree-l1"><a class="reference internal" href="register.html">Register</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Update Account Detail</a></li>
-<li class="toctree-l1"><a class="reference internal" href="update_profile.html">update profile</a></li>
-<li class="toctree-l1"><a class="reference internal" href="upload_image.html">Upload Image</a></li>
+<li class="toctree-l1"><a class="reference internal" href="change_password.html">Change Password</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="change_password.html#post-change-password">POST /change-password</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="generate_api_key.html">Generate API Key</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="generate_api_key.html#post-generate-api-key">POST /generate-api-key</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="get_account_detail.html">Get Account Detail</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="get_account_detail.html#get-get-account">GET /get-account</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="get_profile.html">Get Profile</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="get_profile.html#get-get-profile">GET /get-profile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">History</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="history.html#get-history">GET /history</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="quota.html">Quota</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="quota.html#get-quota">GET /quota</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="register.html">Register</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="register.html#post-register">POST /register</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Update Account Detail</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#post-update-account">POST /update-account</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="update_profile.html">Update Profile</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="update_profile.html#post-update-profile">POST /update-profile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="upload_image.html">Upload Image</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="upload_image.html#post-upload">POST /upload</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Lens Agent API:</span></p>
 <ul>
@@ -221,11 +251,26 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Lens SDK:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../kit_sdk/agent_brains.html">Agent Brains</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kit_sdk/agent_data_relation.html">Agent Insights</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kit_sdk/agent_info.html">Agent Info</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kit_sdk/agent_insights.html">Agent Insights</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kit_sdk/meeting_kit.html">Meeting Kit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit_sdk/agent_brains.html">Agent Brains</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../kit_sdk/agent_brains.html#get-kit-brains">GET kit/brains</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit_sdk/agent_data_relation.html">Agent Data Relation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../kit_sdk/agent_data_relation.html#get-kit-datarelations">GET kit/dataRelations</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit_sdk/agent_info.html">Agent Info</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../kit_sdk/agent_info.html#get-kit-analytics">GET kit/analytics</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit_sdk/agent_insights.html">Agent Insights</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../kit_sdk/agent_insights.html#get-kit-insights">GET kit/insights</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit_sdk/meeting_kit.html">Meeting Kit</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../kit_sdk/meeting_kit.html#post-kit-analyze">POST /kit/analyze</a></li>
+</ul>
+</li>
 </ul>
 
                             
@@ -238,16 +283,19 @@
                             
   <section id="update-account-detail">
 <h1>Update Account Detail<a class="headerlink" href="#update-account-detail" title="Permalink to this headline">¶</a></h1>
-<p><strong>Code snippet for Python Request</strong></p>
+<section id="post-update-account">
+<h2>POST /update-account<a class="headerlink" href="#post-update-account" title="Permalink to this headline">¶</a></h2>
+<p>Example Request:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
 <span class="kn">import</span> <span class="nn">json</span>
 
-<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;lensservice.polynomial.ai/change-password&quot;</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;lensservice.polynomial.ai/update-account&quot;</span>
 
 <span class="n">payload</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">({</span>
-<span class="s2">&quot;oldPassword&quot;</span><span class="p">:</span> <span class="s2">&quot;Himanshu@123&quot;</span><span class="p">,</span>
-<span class="s2">&quot;newPassword&quot;</span><span class="p">:</span> <span class="s2">&quot;Himanshu@1234&quot;</span><span class="p">,</span>
-<span class="s2">&quot;confirmPassword&quot;</span><span class="p">:</span> <span class="s2">&quot;Himanshu@1234&quot;</span>
+<span class="s2">&quot;language&quot;</span><span class="p">:</span> <span class="s2">&quot;English&quot;</span><span class="p">,</span>
+<span class="s2">&quot;isDesktopNotificationAllowed&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+<span class="s2">&quot;isEmailNotificationAllowed&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+<span class="s2">&quot;plan&quot;</span><span class="p">:</span> <span class="s2">&quot;Basic Plan&quot;</span>
 <span class="p">})</span>
 <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
 <span class="s1">&#39;apikey&#39;</span><span class="p">:</span> <span class="s1">&#39;{{apiKey}}&#39;</span><span class="p">,</span>
@@ -259,6 +307,25 @@
 <span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
 </pre></div>
 </div>
+<dl class="field-list">
+<dt class="field-odd">Headers</dt>
+<dd class="field-odd"><p>apiKey</p>
+</dd>
+<dt class="field-even">Params</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">Request Body</dt>
+<dd class="field-odd"><div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;language&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;English&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;isDesktopNotificationAllowed&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;isEmailNotificationAllowed&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;plan&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Basic Plan&quot;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</dd>
+</dl>
+<p>:Example Response</p>
+</section>
 </section>
 
 

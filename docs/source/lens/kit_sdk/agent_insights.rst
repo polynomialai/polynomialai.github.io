@@ -26,12 +26,13 @@ Example Request:
 
 **Sample Response Json**
 
-.. code:: Json
+.. code:: json
+
     {
-    "success": "success",
-    "body": [
-        "Gender Distribution"
-    ]
+        "success": "success",
+        "body": [
+            "Gender Distribution"
+        ]
     }
 
 

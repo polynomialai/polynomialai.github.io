@@ -1,7 +1,11 @@
+==================================
 Meeting Kit
-===================
+==================================
+--------------------------------
+POST /kit/analyze
+--------------------------------
 
-**Code snippet for Python Request**
+Example Request:
 
 .. code:: python
 
@@ -18,3 +22,19 @@ Meeting Kit
     response = requests.request("POST", url, headers=headers, data=payload)
 
     print(response.text)
+
+
+:Headers: 
+    accesskey
+    agentID
+
+:Params: 
+
+:Request Body:
+    .. code:: json
+        {
+        "data": [{"text":"anthony said that this is completely stupid."}],
+        "dry": false
+    }
+
+:Example Response

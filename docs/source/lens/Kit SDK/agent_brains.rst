@@ -1,7 +1,11 @@
+==================================
 Agent Brains
-===================
+==================================
+--------------------------------
+GET kit/brains
+--------------------------------
 
-**Code snippet for Python Request**
+Example Request:
 
 .. code:: python
 
@@ -18,3 +22,14 @@ Agent Brains
     response = requests.request("GET", url, headers=headers, data=payload)
 
     print(response.text)
+
+
+:Headers: 
+    accesskey
+    agentID
+
+:Params: 
+
+:Request Body:
+
+:Example Response

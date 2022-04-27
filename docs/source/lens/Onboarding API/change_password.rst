@@ -1,7 +1,11 @@
+==================================
 Change Password
-===================
+==================================
+--------------------------------
+POST /change-password
+--------------------------------
 
-**Code snippet for Python Request**
+**Example Request**
 
 .. code:: python
 
@@ -23,3 +27,19 @@ Change Password
     response = requests.request("POST", url, headers=headers, data=payload)
 
     print(response.text)
+
+
+:Headers: 
+    apikey
+
+:Params: 
+
+:Request Body:
+    .. code:: json
+        {
+        "oldPassword": "Himanshu@123",
+        "newPassword": "Himanshu@1234",
+        "confirmPassword": "Himanshu@1234"
+    }
+
+:Example Response

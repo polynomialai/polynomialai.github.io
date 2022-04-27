@@ -1,7 +1,11 @@
+==================================
 Agent Info
-===================
+==================================
+--------------------------------
+GET kit/analytics
+--------------------------------
 
-**Code snippet for Python Request**
+Example Request:
 
 .. code:: python
 
@@ -22,15 +26,25 @@ Agent Info
 
 **Sample Response Json**
 
-.. code:: json
+.. code:: Json
 
     {
-      "success": "success",
-      "body": {
-        "totalUptime": 14140726976,
-        "totalRequests": 59,
-        "avgResponseTime": 51659,
-        "totalInsightServed": 246,
-        "quotaRemaining": 9270
-      }
-    }
+  "success": "success",
+  "body": {
+    "totalUptime": 14140726976,
+    "totalRequests": 59,
+    "avgResponseTime": 51659,
+    "totalInsightServed": 246,
+    "quotaRemaining": 9270
+  }
+}
+
+:Headers: 
+    accesskey
+    agentID
+
+:Params: 
+
+:Request Body:
+
+:Example Response

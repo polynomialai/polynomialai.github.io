@@ -1,7 +1,11 @@
+==================================
 Agent Insights
-===================
+==================================
+--------------------------------
+GET kit/insights
+--------------------------------
 
-**Code snippet for Python Request**
+Example Request:
 
 .. code:: python
 
@@ -22,11 +26,21 @@ Agent Insights
 
 **Sample Response Json**
 
-.. code:: json
-
+.. code:: Json
     {
-        "success": "success",
-        "body": [
-            "Gender Distribution"
-        ]
+    "success": "success",
+    "body": [
+        "Gender Distribution"
+    ]
     }
+
+
+:Headers: 
+    accesskey
+    agentID
+
+:Params: 
+
+:Request Body:
+
+:Example Response

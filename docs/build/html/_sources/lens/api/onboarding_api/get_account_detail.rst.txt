@@ -1,7 +1,11 @@
+==================================
 Get Account Detail
-===================
+==================================
+--------------------------------
+GET /get-account
+--------------------------------
 
-**Code snippet for Python Request**
+Example Request:
 
 .. code:: python
 
@@ -17,3 +21,13 @@ Get Account Detail
     response = requests.request("GET", url, headers=headers, data=payload)
 
     print(response.text)
+
+
+:Headers: 
+    apikey
+
+:Params: 
+
+:Request Body:
+
+:Example Response

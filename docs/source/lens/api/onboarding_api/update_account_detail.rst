@@ -1,19 +1,24 @@
+==================================
 Update Account Detail
-======================
+==================================
+--------------------------------
+POST /update-account
+--------------------------------
 
-**Code snippet for Python Request**
+Example Request:
 
 .. code:: python
 
     import requests
     import json
 
-    url = "lensservice.polynomial.ai/change-password"
+    url = "lensservice.polynomial.ai/update-account"
 
     payload = json.dumps({
-    "oldPassword": "Himanshu@123",
-    "newPassword": "Himanshu@1234",
-    "confirmPassword": "Himanshu@1234"
+    "language": "English",
+    "isDesktopNotificationAllowed": False,
+    "isEmailNotificationAllowed": False,
+    "plan": "Basic Plan"
     })
     headers = {
     'apikey': '{{apiKey}}',
@@ -23,3 +28,20 @@ Update Account Detail
     response = requests.request("POST", url, headers=headers, data=payload)
 
     print(response.text)
+
+:Headers: 
+    apiKey
+    
+:Params: 
+
+:Request Body:
+    .. code:: json
+        
+        {
+            "language": "English",
+            "isDesktopNotificationAllowed": false,
+            "isEmailNotificationAllowed": false,
+            "plan": "Basic Plan"
+        }
+
+:Example Response

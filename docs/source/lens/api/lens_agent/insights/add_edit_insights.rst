@@ -38,7 +38,8 @@ Update list of insights
 
 .. code:: json
 
-{
-    "insightsID":["6180bd4dc7dd291d592f3918"],
-    "agentID": "6180bae8d7ba18b5e895b4c8"
-}
+    {
+        "insightsID":["6180bd4dc7dd291d592f3918"],
+        "agentID": "6180bae8d7ba18b5e895b4c8"
+    }
+    

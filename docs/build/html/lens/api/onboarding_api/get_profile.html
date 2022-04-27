@@ -174,16 +174,46 @@
 <li class="toctree-l2"><a class="reference internal" href="../lens_admin/upload_image.html#post-upload-image">POST /upload-image</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="change_password.html">Change Password</a></li>
-<li class="toctree-l1"><a class="reference internal" href="generate_api_key.html">Generate API Key</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_account_detail.html">Get Account Detail</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Get Profile</a></li>
-<li class="toctree-l1"><a class="reference internal" href="history.html">History</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quota.html">Quota</a></li>
-<li class="toctree-l1"><a class="reference internal" href="register.html">Register</a></li>
-<li class="toctree-l1"><a class="reference internal" href="update_account_detail.html">Update Account Detail</a></li>
-<li class="toctree-l1"><a class="reference internal" href="update_profile.html">update profile</a></li>
-<li class="toctree-l1"><a class="reference internal" href="upload_image.html">Upload Image</a></li>
+<li class="toctree-l1"><a class="reference internal" href="change_password.html">Change Password</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="change_password.html#post-change-password">POST /change-password</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="generate_api_key.html">Generate API Key</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="generate_api_key.html#post-generate-api-key">POST /generate-api-key</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="get_account_detail.html">Get Account Detail</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="get_account_detail.html#get-get-account">GET /get-account</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Get Profile</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#get-get-profile">GET /get-profile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">History</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="history.html#get-history">GET /history</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="quota.html">Quota</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="quota.html#get-quota">GET /quota</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="register.html">Register</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="register.html#post-register">POST /register</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="update_account_detail.html">Update Account Detail</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="update_account_detail.html#post-update-account">POST /update-account</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="update_profile.html">Update Profile</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="update_profile.html#post-update-profile">POST /update-profile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="upload_image.html">Upload Image</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="upload_image.html#post-upload">POST /upload</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Lens Agent API:</span></p>
 <ul>
@@ -260,11 +290,26 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Lens SDK:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../kit_sdk/agent_brains.html">Agent Brains</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kit_sdk/agent_data_relation.html">Agent Insights</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kit_sdk/agent_info.html">Agent Info</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kit_sdk/agent_insights.html">Agent Insights</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../kit_sdk/meeting_kit.html">Meeting Kit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit_sdk/agent_brains.html">Agent Brains</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../kit_sdk/agent_brains.html#get-kit-brains">GET kit/brains</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit_sdk/agent_data_relation.html">Agent Data Relation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../kit_sdk/agent_data_relation.html#get-kit-datarelations">GET kit/dataRelations</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit_sdk/agent_info.html">Agent Info</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../kit_sdk/agent_info.html#get-kit-analytics">GET kit/analytics</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit_sdk/agent_insights.html">Agent Insights</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../kit_sdk/agent_insights.html#get-kit-insights">GET kit/insights</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../kit_sdk/meeting_kit.html">Meeting Kit</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../kit_sdk/meeting_kit.html#post-kit-analyze">POST /kit/analyze</a></li>
+</ul>
+</li>
 </ul>
 
                             
@@ -277,7 +322,9 @@
                             
   <section id="get-profile">
 <h1>Get Profile<a class="headerlink" href="#get-profile" title="Permalink to this headline">¶</a></h1>
-<p><strong>Code snippet for Python Request</strong></p>
+<section id="get-get-profile">
+<h2>GET /get-profile<a class="headerlink" href="#get-get-profile" title="Permalink to this headline">¶</a></h2>
+<p>Example Request:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
 
 <span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;lensservice.polynomial.ai/get-profile&quot;</span>
@@ -292,6 +339,17 @@
 <span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
 </pre></div>
 </div>
+<dl class="field-list simple">
+<dt class="field-odd">Headers</dt>
+<dd class="field-odd"><p>apikey</p>
+</dd>
+<dt class="field-even">Params</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">Request Body</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+<p>:Example Response</p>
+</section>
 </section>
 
 

@@ -50,7 +50,7 @@ listed below.
 
 **cURL**
 
-.. code:: c
+.. code:: bash
 
    curl --location --request POST 'lensservice.polynomial.ai/kit/analyze' \
   --header 'accesskey: {{key}}' \
@@ -223,11 +223,10 @@ Sample Request Json
            "identifier": 3,
            "start_time": "2021-10-19 18:00:57.859",
            "end_time": "2021-10-19 18:01:01.250",
-         },
-         {<->},
-         {<->}
+         }
      ]
    }
+
 **Header**
 
 -  accessKey : Unique key provided by the Agent

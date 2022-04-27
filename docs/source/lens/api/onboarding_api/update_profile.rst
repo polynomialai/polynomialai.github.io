@@ -1,7 +1,11 @@
-update profile
-===================
+==================================
+Update Profile
+==================================
+--------------------------------
+POST /update-profile
+--------------------------------
 
-**Code snippet for Python Request**
+Example Request:
 
 .. code:: python
 
@@ -21,3 +25,18 @@ update profile
     response = requests.request("POST", url, headers=headers, data=payload)
 
     print(response.text)
+
+:Headers: 
+    apikey
+    
+:Params: 
+
+:Request Body:
+    .. code:: json
+        
+        {
+            "userName": "Swapnil Kapad",
+            "displayPicture": "https://polynomialservices.blob.core.windows.net/stores/WmiKSCBWzrEd_RZQrwPGlnqc.jpg"
+        }
+
+:Example Response

@@ -1,7 +1,11 @@
+==================================
 Register
-========
+==================================
+--------------------------------
+POST /register
+--------------------------------
 
-**Code snippet for Python Request**
+Example Request:
 
 .. code:: python
 
@@ -20,3 +24,16 @@ Register
     print(response.text)
 
 
+:Headers: 
+
+:Params: 
+
+:Request Body:
+    .. code:: json
+        
+        {
+            "email": "abc@email.com",
+            "password": "123456"
+        }
+
+:Example Response

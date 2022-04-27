@@ -1,7 +1,11 @@
+==================================
 Upload Image
-======================
+==================================
+--------------------------------
+POST /upload
+--------------------------------
 
-**Code snippet for Python Request**
+Example Request:
 
 .. code:: python
 
@@ -20,3 +24,13 @@ Upload Image
     response = requests.request("POST", url, headers=headers, data=payload, files=files)
 
     print(response.text)
+
+:Headers: 
+    apikey
+
+:Params: 
+
+:Request Body:
+    file
+
+:Example Response

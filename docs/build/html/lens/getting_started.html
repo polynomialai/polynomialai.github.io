@@ -174,16 +174,46 @@
 <li class="toctree-l2"><a class="reference internal" href="api/lens_admin/upload_image.html#post-upload-image">POST /upload-image</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="api/onboarding_api/change_password.html">Change Password</a></li>
-<li class="toctree-l1"><a class="reference internal" href="api/onboarding_api/generate_api_key.html">Generate API Key</a></li>
-<li class="toctree-l1"><a class="reference internal" href="api/onboarding_api/get_account_detail.html">Get Account Detail</a></li>
-<li class="toctree-l1"><a class="reference internal" href="api/onboarding_api/get_profile.html">Get Profile</a></li>
-<li class="toctree-l1"><a class="reference internal" href="api/onboarding_api/history.html">History</a></li>
-<li class="toctree-l1"><a class="reference internal" href="api/onboarding_api/quota.html">Quota</a></li>
-<li class="toctree-l1"><a class="reference internal" href="api/onboarding_api/register.html">Register</a></li>
-<li class="toctree-l1"><a class="reference internal" href="api/onboarding_api/update_account_detail.html">Update Account Detail</a></li>
-<li class="toctree-l1"><a class="reference internal" href="api/onboarding_api/update_profile.html">update profile</a></li>
-<li class="toctree-l1"><a class="reference internal" href="api/onboarding_api/upload_image.html">Upload Image</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/onboarding_api/change_password.html">Change Password</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api/onboarding_api/change_password.html#post-change-password">POST /change-password</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api/onboarding_api/generate_api_key.html">Generate API Key</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api/onboarding_api/generate_api_key.html#post-generate-api-key">POST /generate-api-key</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api/onboarding_api/get_account_detail.html">Get Account Detail</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api/onboarding_api/get_account_detail.html#get-get-account">GET /get-account</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api/onboarding_api/get_profile.html">Get Profile</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api/onboarding_api/get_profile.html#get-get-profile">GET /get-profile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api/onboarding_api/history.html">History</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api/onboarding_api/history.html#get-history">GET /history</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api/onboarding_api/quota.html">Quota</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api/onboarding_api/quota.html#get-quota">GET /quota</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api/onboarding_api/register.html">Register</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api/onboarding_api/register.html#post-register">POST /register</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api/onboarding_api/update_account_detail.html">Update Account Detail</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api/onboarding_api/update_account_detail.html#post-update-account">POST /update-account</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api/onboarding_api/update_profile.html">Update Profile</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api/onboarding_api/update_profile.html#post-update-profile">POST /update-profile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api/onboarding_api/upload_image.html">Upload Image</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api/onboarding_api/upload_image.html#post-upload">POST /upload</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Lens Agent API:</span></p>
 <ul>
@@ -260,11 +290,26 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Lens SDK:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../kit_sdk/agent_brains.html">Agent Brains</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../kit_sdk/agent_data_relation.html">Agent Insights</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../kit_sdk/agent_info.html">Agent Info</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../kit_sdk/agent_insights.html">Agent Insights</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../kit_sdk/meeting_kit.html">Meeting Kit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kit_sdk/agent_brains.html">Agent Brains</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="kit_sdk/agent_brains.html#get-kit-brains">GET kit/brains</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="kit_sdk/agent_data_relation.html">Agent Data Relation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="kit_sdk/agent_data_relation.html#get-kit-datarelations">GET kit/dataRelations</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="kit_sdk/agent_info.html">Agent Info</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="kit_sdk/agent_info.html#get-kit-analytics">GET kit/analytics</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="kit_sdk/agent_insights.html">Agent Insights</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="kit_sdk/agent_insights.html#get-kit-insights">GET kit/insights</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="kit_sdk/meeting_kit.html">Meeting Kit</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="kit_sdk/meeting_kit.html#post-kit-analyze">POST /kit/analyze</a></li>
+</ul>
+</li>
 </ul>
 
                             
@@ -320,36 +365,36 @@ listed below.</p>
 </pre></div>
 </div>
 <p><strong>cURL</strong></p>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span> curl --location --request POST &#39;lensservice.polynomial.ai/kit/analyze&#39; \
---header &#39;accesskey: {{key}}&#39; \
---header &#39;agentID: 61b5efa89ef90206c8541bba&#39; \
---data-raw &#39;{
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span> curl --location --request POST <span class="s1">&#39;lensservice.polynomial.ai/kit/analyze&#39;</span> <span class="se">\</span>
+--header <span class="s1">&#39;accesskey: {{key}}&#39;</span> <span class="se">\</span>
+--header <span class="s1">&#39;agentID: 61b5efa89ef90206c8541bba&#39;</span> <span class="se">\</span>
+--data-raw <span class="s1">&#39;{</span>
 
-&quot;data&quot;:  [
-  {
-    &quot;user_id&quot;: 1543,
-    &quot;full_name&quot;: &quot;Aparna Pothanis&quot;,
-    &quot;email&quot;: &quot;aparnna_pothanis@polynomial.ai&quot;,
-    &quot;name&quot;: &quot;Polynomial&quot;,
-    &quot;utterance&quot;: &quot;Hi everyone&quot;,
-    &quot;identifier&quot;: 2,
-    &quot;start_time&quot;: &quot;2021-10-19 18:00:55.760&quot;,
-    &quot;end_time&quot;: &quot;2021-10-19 18:00:56.780&quot;,
-},
-  {
-    &quot;user_id&quot;: 1543,
-    &quot;full_name&quot;: &quot;Revant Amingad&quot;,
-    &quot;email&quot;: &quot;ramingad@gainsight.com&quot;,
-    &quot;name&quot;: &quot;Gainsight&quot;,
-    &quot;utterance&quot;: &quot;  Good afternoon.&quot;,
-    &quot;identifier&quot;: 3,
-    &quot;start_time&quot;: &quot;2021-10-19 18:00:57.859&quot;,
-    &quot;end_time&quot;: &quot;2021-10-19 18:01:01.250&quot;,
-  },
-  {&lt;-&gt;},
-  {&lt;-&gt;}
-  ]
-  }&#39;
+<span class="s1">&quot;data&quot;:  [</span>
+<span class="s1">  {</span>
+<span class="s1">    &quot;user_id&quot;: 1543,</span>
+<span class="s1">    &quot;full_name&quot;: &quot;Aparna Pothanis&quot;,</span>
+<span class="s1">    &quot;email&quot;: &quot;aparnna_pothanis@polynomial.ai&quot;,</span>
+<span class="s1">    &quot;name&quot;: &quot;Polynomial&quot;,</span>
+<span class="s1">    &quot;utterance&quot;: &quot;Hi everyone&quot;,</span>
+<span class="s1">    &quot;identifier&quot;: 2,</span>
+<span class="s1">    &quot;start_time&quot;: &quot;2021-10-19 18:00:55.760&quot;,</span>
+<span class="s1">    &quot;end_time&quot;: &quot;2021-10-19 18:00:56.780&quot;,</span>
+<span class="s1">},</span>
+<span class="s1">  {</span>
+<span class="s1">    &quot;user_id&quot;: 1543,</span>
+<span class="s1">    &quot;full_name&quot;: &quot;Revant Amingad&quot;,</span>
+<span class="s1">    &quot;email&quot;: &quot;ramingad@gainsight.com&quot;,</span>
+<span class="s1">    &quot;name&quot;: &quot;Gainsight&quot;,</span>
+<span class="s1">    &quot;utterance&quot;: &quot;  Good afternoon.&quot;,</span>
+<span class="s1">    &quot;identifier&quot;: 3,</span>
+<span class="s1">    &quot;start_time&quot;: &quot;2021-10-19 18:00:57.859&quot;,</span>
+<span class="s1">    &quot;end_time&quot;: &quot;2021-10-19 18:01:01.250&quot;,</span>
+<span class="s1">  },</span>
+<span class="s1">  {&lt;-&gt;},</span>
+<span class="s1">  {&lt;-&gt;}</span>
+<span class="s1">  ]</span>
+<span class="s1">  }&#39;</span>
 </pre></div>
 </div>
 <p><strong>NodeJs - Native</strong></p>
@@ -460,32 +505,30 @@ listed below.</p>
 </div>
 <p><strong>Request Parameter</strong></p>
 <p>Sample Request Json</p>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span>{
-  &quot;data&quot;: [
-       {
-        &quot;user_id&quot;: 1543,
-        &quot;full_name&quot;: &quot;Aparna Pothanis&quot;,
-        &quot;email&quot;: &quot;aparnna_pothanis@polynomial.ai&quot;,
-        &quot;name&quot;: &quot;Polynomial&quot;,
-        &quot;utterance&quot;: &quot;Hi everyone&quot;,
-       &quot;identifier&quot;: 2,
-        &quot;start_time&quot;: &quot;2021-10-19 18:00:55.760&quot;,
-        &quot;end_time&quot;: &quot;2021-10-19 18:00:56.780&quot;,
-      },
-      {
-        &quot;user_id&quot;: 1543,
-        &quot;full_name&quot;: &quot;Revant Amingad&quot;,
-        &quot;email&quot;: &quot;ramingad@gainsight.com&quot;,
-        &quot;name&quot;: &quot;Gainsight&quot;,
-        &quot;utterance&quot;: &quot;  Good afternoon.&quot;,
-        &quot;identifier&quot;: 3,
-        &quot;start_time&quot;: &quot;2021-10-19 18:00:57.859&quot;,
-        &quot;end_time&quot;: &quot;2021-10-19 18:01:01.250&quot;,
-      },
-      {&lt;-&gt;},
-      {&lt;-&gt;}
-  ]
-}
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">       </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;user_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1543</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;full_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Aparna Pothanis&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;email&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;aparnna_pothanis@polynomial.ai&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Polynomial&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;utterance&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Hi everyone&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">       </span><span class="nt">&quot;identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;start_time&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2021-10-19 18:00:55.760&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;end_time&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2021-10-19 18:00:56.780&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="p">},</span><span class="w"></span>
+<span class="w">      </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;user_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1543</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;full_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Revant Amingad&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;email&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ramingad@gainsight.com&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Gainsight&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;utterance&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;  Good afternoon.&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;start_time&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2021-10-19 18:00:57.859&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;end_time&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2021-10-19 18:01:01.250&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <p><strong>Header</strong></p>

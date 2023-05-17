@@ -11,12 +11,21 @@ Welcome to Polynomial One documentation!
    :maxdepth: 1
    :caption: Table of Contents:
 
+   lens/github.rst
    lens/lens_introduction.rst
    lens/lens_brain.rst
    lens/authentication.rst
    lens/installation.rst
    lens/getting_started.rst
    
+.. toctree::
+   :glob:
+   :maxdepth: 2
+   :caption: Github Prerequisite:
+
+   lens/github/feature_addition.rst
+   lens/github/bug_report_concise.rst
+   lens/github/bug_report_detailed.rst
 
 .. toctree::
    :glob:
